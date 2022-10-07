@@ -5,7 +5,7 @@ import FilmGrain from './filmGrain'
 
 const timelapseId = "402YMZJfp6kW02302E3r1RMe013Ub9AqlPwzr4VjD00HO7ME"
 
-import dynamic from 'next/dynamic'
+var ReactRotatingText = require('react-rotating-text');
 
 const containerStyle = {
   width: '100%',
@@ -166,7 +166,17 @@ export default ({ index, progress, setProgress, github }) => (
           }}
         />
         <p style={supertitleStyle}>“HACK CLUB PRESENTS”</p>
-        <p style={{fontSize: '2.7em', marginBlockEnd: '0.27em', marginBlockStart: '0.27em'}}>An adventure like none other...</p>
+        <p style={{fontSize: '2.7em', marginBlockEnd: '0.27em', marginBlockStart: '0.27em'}}>
+          <ReactRotatingText 
+            items={['An adventure', 'A hackathon', 'A new years']} 
+            cursor={false}
+            eraseMode="erase"
+            typingInterval="25"
+            deletingInterval="25"
+            emptyPause="100"
+            pause="4000"
+          /> like none other...
+        </p>
         <h1 className="title">
           EPOCH
         </h1>

@@ -12,6 +12,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-input-autosize": "^2.2.2",
+    "react-rotating-text": "^1.4.1",
     "react-scroll": "^1.8.1",
     "react-ticker": "^1.3.2"
   }
