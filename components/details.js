@@ -119,7 +119,7 @@ const Details = () => (
                 <p>All high-school & upper-middle-school aged students are welcome to come! You don't have to be a member of the Hack Club community or be a Hack Club leader.</p>
               </div>
               <div className="aside" style={{ marginTop: '0.5em' }}>
-                <p className="section">Eligibility</p>
+                <p className="section">COVID-19</p>
                 <p>We require all participants to be vaccinated against COVID-19 or to have a medical exemption and will be providing all participants with N95 masks and rapid tests. We'll also be performing anonymous contact tracing and supporting any participant who tests positive with isolation.</p>
               </div>
             </div>
