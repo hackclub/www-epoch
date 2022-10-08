@@ -1,9 +1,9 @@
 import ProgressButton from './progressButton'
 import FilmGrain from './filmGrain'
 import Assemble from '../public/assemble.jpg'
-import Assemble2 from '../public/assemble2.jpg'
-import Assemble3 from '../public/assemble3.jpg'
-import Assemble4 from '../public/assemble4.jpg'
+import Assemble2 from '../public/assemble2.JPG'
+import Assemble3 from '../public/assemble3.JPG'
+import Assemble4 from '../public/assemble4.JPG'
 import Image from 'next/image'
 
 const containerStyle = {
