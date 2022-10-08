@@ -16,7 +16,6 @@ const containerStyle = {
   justifyContent: 'center',
   height: '100vh',
   borderTop: '2px solid rgba(255, 255, 255, 0.6)',
-  borderBottom: '2px solid rgba(255, 255, 255, 0.6)'
 }
 
 const supertitleStyle = {
