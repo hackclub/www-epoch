@@ -31,7 +31,7 @@ const subtitleStyle = {
 }
 
 
-export default ({ index, progress, setProgress, github }) => (
+const Intro = ({ index, progress, setProgress, github }) => (
   <>
     <style jsx>{`
 
@@ -237,3 +237,5 @@ export default ({ index, progress, setProgress, github }) => (
     </div>
   </>
 )
+
+export default Intro
