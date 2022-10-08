@@ -1,10 +1,4 @@
-import ProgressButton from './progressButton'
 import FilmGrain from './filmGrain'
-import Assemble from '../public/assemble.jpg'
-import Assemble2 from '../public/assemble2.jpg'
-import Assemble3 from '../public/assemble3.jpg'
-import Assemble4 from '../public/assemble4.jpg'
-import Image from 'next/image'
 
 const containerStyle = {
   width: '100%',
@@ -16,15 +10,13 @@ const containerStyle = {
   justifyContent: 'center',
   height: '100vh',
   borderTop: '2px solid rgba(255, 255, 255, 0.6)',
+  borderBottom: '2px solid rgba(255, 255, 255, 0.6)',
 }
 
 
 const Details = () => (
   <>
     <style jsx>{`
-
-      @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-
       p,
       h1 {
         text-shadow: 0 0 0.1rem #eee;
@@ -64,26 +56,37 @@ const Details = () => (
       .card {
         padding: 1em;
         width: 100%;
-        background-color: black;
-        border-radius: 1em;
+        border: 1px solid #525250;
       }
 
-      .card-nobackground {
+      .aside {
         padding: 1em;
         width: 100%;
       }
 
-      .card p, .card-nobackground p {
+      .card p, .aside p {
         margin: 0
+      }
+
+      .card p {
+        font-size: 1.75em;
       }
 
       p.section {
         font-weight: 700;
       }
+
+      .card p.section {
+        font-size: 1.85em;
+      }
+
+      .aside p.section {
+        font-size: 1.75em;
+      }
     `}</style>
     <div style={containerStyle}>
-      <div className="blur-in banner">
-        <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr', gap: '48px' }}>
+      <div className="banner">
+        <div style={{ display: 'grid', gridTemplateColumns: '1.75fr 1.25fr', gap: '64px' }}>
           <div style={{ display: 'flex', alignItems: 'center', height: 'calc(100vh - 6em)' }}>
             <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', gap: '16px', width: '100%' }}>
               <img
@@ -107,15 +110,15 @@ const Details = () => (
           </div>
           <div style={{ display: 'flex', alignItems: 'center', height: 'calc(100vh - 6em)', position: 'relative' }}>
             <div style={{ display: 'flex', flexDirection: 'column' }}>
-              <div className="card-nobackground" style={{ marginBottom: '0.5em' }}>
+              <div className="aside" style={{ marginBottom: '0.5em' }}>
                 <p className="section">Travel stipends</p>
                 <p>We're offering a limited number of stipends to cover travel expenses. If you need support with your travel stipend, please indicate this on your registration form and we will consider you for a travel stipend.</p>
               </div>
-              <div className="card-nobackground" style={{ marginVertical: '0.5em' }}>
+              <div className="aside" style={{ marginVertical: '0.5em' }}>
                 <p className="section">Eligibility</p>
                 <p>All high-school & upper-middle-school aged students are welcome to come! You don't have to be a member of the Hack Club community or be a Hack Club leader.</p>
               </div>
-              <div className="card-nobackground" style={{ marginTop: '0.5em' }}>
+              <div className="aside" style={{ marginTop: '0.5em' }}>
                 <p className="section">Eligibility</p>
                 <p>We require all participants to be vaccinated against COVID-19 or to have a medical exemption and will be providing all participants with N95 masks and rapid tests. We'll also be performing anonymous contact tracing and supporting any participant who tests positive with isolation.</p>
               </div>
