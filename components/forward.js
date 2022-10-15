@@ -8,14 +8,18 @@ import Image from 'next/image'
 
 const containerStyle = {
   width: '100%',
+  boxSizing: 'content-box',
   margin: 0,
   fontFamily: "'Bellefair', serif",
   display: 'flex',
   position: 'relative',
   alignItems: 'center',
   justifyContent: 'center',
-  height: '100vh',
+  height: 'calc(100vh)',
   borderTop: '2px solid rgba(255, 255, 255, 0.6)',
+  borderBottom: '2px solid rgba(255, 255, 255, 0.6)',
+  overflow: 'hidden',
+  background: `linear-gradient(0deg, rgba(30, 30, 30, 0.5), rgba(30, 30, 30, 0.5)), radial-gradient(66.14% 80.29% at 50% 50%, rgba(0, 0, 0, 0.6) 0%, #0000 54.34%, #1E1E1E 100%)`
 }
 
 const supertitleStyle = {
@@ -26,15 +30,13 @@ const supertitleStyle = {
 
 const subtitleStyle = {
   fontSize: '1.7em',
+  paddingBottom: '3em'
 }
 
 
 const Forward = ({ index, progress, setProgress, github }) => (
   <>
     <style jsx>{`
-
-      @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-
       p,
       h1 {
         text-shadow: 0 0 0.1rem #eee;
@@ -88,17 +90,17 @@ const Forward = ({ index, progress, setProgress, github }) => (
         display: flex;
         flex-direction: column;
         position: absolute;
-        padding: 3em;
         width: 90vw;
         z-index: 2;
-        overflow: hidden;
-        height: calc(100vh - 6em)
+        padding: 3em 0em;
+        overflow: visible;
+        height: calc(100vh - 6em);
       }
     `}</style>
     <div style={containerStyle}>
       <div className="blur-in banner">
-        <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr', gap: '48px' }}>
-          <div style={{ display: 'flex', alignItems: 'center', height: 'calc(100vh - 6em)' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr', gap: '48px', overflow: 'visible'  }}>
+          <div style={{ display: 'flex', alignItems: 'center', height: 'calc(100vh - 6em)', overflow:'visible' }}>
             <div style={{ position: 'relative' }}>
               <img
                 src="decorative-corner.png"
@@ -117,7 +119,7 @@ const Forward = ({ index, progress, setProgress, github }) => (
                 All are welcome, RSVP today or read on for more.</div>
             </div>
           </div>
-          <div style={{ position: 'relative' }}>
+          <div style={{ position: 'relative', overflow: 'visible' }}>
             <div style={{ position: 'absolute', top: 'calc(-1 * (24vh))', width: '100%' }}>
               <div style={{ height: '33vh', position: 'relative', marginBottom: '8px',borderRadius: '8px', border: '1px solid rgba(255,255,255,0.6)' }}>
                 <Image src={Assemble3} style={{ borderRadius: '7px' }} objectFit="cover" layout='fill' />

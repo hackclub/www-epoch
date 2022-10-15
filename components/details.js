@@ -11,6 +11,7 @@ const containerStyle = {
   height: '100vh',
   borderTop: '2px solid rgba(255, 255, 255, 0.6)',
   borderBottom: '2px solid rgba(255, 255, 255, 0.6)',
+  
 }
 
 
@@ -49,8 +50,8 @@ const Details = () => (
         padding: 3em;
         width: 90vw;
         z-index: 2;
-        overflow: hidden;
-        height: calc(100vh - 6em)
+        overflow: visible;
+        height: calc(100vh + 6em)
       }
 
       .card {
@@ -87,7 +88,7 @@ const Details = () => (
     <div style={containerStyle}>
       <div className="banner">
         <div style={{ display: 'grid', gridTemplateColumns: '1.75fr 1.25fr', gap: '64px' }}>
-          <div style={{ display: 'flex', alignItems: 'center', height: 'calc(100vh - 6em)' }}>
+          <div style={{ display: 'flex', alignItems: 'center', height: 'calc(100vh)' }}>
             <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', gap: '16px', width: '100%' }}>
               <img
                 src="decorative-corner.png"
@@ -108,7 +109,7 @@ const Details = () => (
               </div>
             </div>
           </div>
-          <div style={{ display: 'flex', alignItems: 'center', height: 'calc(100vh - 6em)', position: 'relative' }}>
+          <div style={{ display: 'flex', alignItems: 'center', height: 'calc(100vh + 6em)', position: 'relative' }}>
             <div style={{ display: 'flex', flexDirection: 'column' }}>
               <div className="aside" style={{ marginBottom: '0.5em' }}>
                 <p className="section">Travel stipends</p>
