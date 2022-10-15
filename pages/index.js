@@ -27,10 +27,12 @@ export default function Main() {
           background: `linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6965161064425771) 20%, rgba(0,0,0,0.2987570028011205) 100%), 
                         url(https://cloud-mm9cx1u00-hack-club-bot.vercel.app/0gurgaon-4.png)`,
           backgroundSize: "cover",
-          backgroundPosition: 'center'
+          backgroundPosition: 'center',
+          textAlign: 'left'
         }}
       >
-        <h1 className="title">EPOCH</h1>
+        <h1 className="title" style={{margin: "auto",
+            width: "800px"}}>EPOCH</h1>
         <Box
           sx={{
             margin: "auto",
@@ -89,17 +91,18 @@ export default function Main() {
             background: "dark",
             color: "white",
             lineHeight: 1.5,
-            border: "1px solid rgba(255,255,255,0.7)",
+            border: "3px dashed",
+            borderColor: 'white',
             textAlign: "left",
             margin: "auto",
-            maxWidth: "1200px",
+            maxWidth: "800px",
             mt: 5,
           }}
         >
-          <Heading sx={{ color: "white", fontSize: 6, mb: 3 }}>
+          <Heading sx={{ color: "white", fontSize: 5, mb: 3 }}>
             hackathon /ˈhakəθɒn/
           </Heading>
-          <Box sx={{ fontSize: 4, width: "80%" }}>
+          <Box sx={{ fontSize: 3, width: "100%" }}>
             <Text
               sx={{
                 background: "white",
@@ -108,7 +111,7 @@ export default function Main() {
                 py: 1,
                 px: 2,
                 borderRadius: 4,
-                fontSize: 3,
+                fontSize: 2,
               }}
             >
               noun
@@ -121,14 +124,14 @@ export default function Main() {
                 py: 1,
                 px: 2,
                 borderRadius: 4,
-                fontSize: 3,
+                fontSize: 2,
               }}
             >
               informal
             </Text>{" "}
             a social coding event where teens come together to build projects in
-            a short amount of time and share them with the world.
-            <Box sx={{position: 'relative', mt: 2}}>
+            a weekend and share them with the world.
+            <Box sx={{position: 'relative', mt: 3}}>
               <Text
                 sx={{
                   background: "white",
@@ -160,7 +163,44 @@ export default function Main() {
             </Box>
           </Box>
         </Card>
+        <Box
+          sx={{
+            margin: "auto",
+            width: "800px",
+            mt: 5,
+            fontSize: 4,
+          }}
+        >
+          50+ of us have came together to put this event together,
+          you may be wondering what attending Epoch will be like. 
+          When we asked around, here's what folks told us 
+          you could expect:
+          <Box sx={{background: '#000', display: 'flex', fontFamily: 'Roboto', border: '3px solid white', borderRadius: 4, overflow: 'hidden'}}>
+            <img src="https://github.com/sampoder.png" height="84px" />
+            <Box>
+              <b>@sampoder</b>
+              <p>
+                Epoch will be
+              </p>
+            </Box>
+          </Box>
+        </Box>
       </Box>
+      <Card
+          sx={{
+            background: "dark",
+            color: "white",
+            lineHeight: 1.5,
+            border: "3px dashed",
+            borderColor: 'white',
+            textAlign: "left",
+            margin: "auto",
+            maxWidth: "800px",
+            mt: 0
+          }}
+        >
+          <Heading>Frequently Asked Questions</Heading>
+      </Card>
       <style>
         {`
         
