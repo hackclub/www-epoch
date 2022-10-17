@@ -205,7 +205,7 @@ export default function Main() {
         {`
         
         .title {
-          font-family: 'Times New Roman';
+          font-family: Times New Roman;
           font-size: 6em;
           line-height: 1em;
           font-style: italic;
