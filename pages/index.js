@@ -2,14 +2,23 @@ import Meta from "../components/meta";
 import Intro from "../components/intro";
 import Forward from "../components/forward";
 import Details from "../components/details";
-import { Box, Card, Grid, Heading, Container, Text } from "theme-ui";
+import {
+  Box,
+  Card,
+  Grid,
+  Heading,
+  Container,
+  Text,
+  Image,
+  Input,
+  Button,
+} from "theme-ui";
 import FilmGrain from "../components/filmGrain";
 import Icon from "@hackclub/icons";
 import Assemble from "../public/assemble.jpg";
 import Assemble2 from "../public/assemble2.JPG";
 import Assemble3 from "../public/assemble3.JPG";
 import Assemble4 from "../public/assemble4.JPG";
-import Image from "next/image";
 import Flag from "../components/flag";
 import MuxPlayer from "@mux/mux-player-react";
 
@@ -23,16 +32,27 @@ export default function Main() {
           textAlign: "center",
           color: "white",
           pt: 5,
-          pb: 6,
+          pb: 4,
           background: `linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6965161064425771) 20%, rgba(0,0,0,0.2987570028011205) 100%), 
                         url(https://cloud-mm9cx1u00-hack-club-bot.vercel.app/0gurgaon-4.png)`,
           backgroundSize: "cover",
-          backgroundPosition: 'center',
-          textAlign: 'left'
+          backgroundPosition: "center",
+          backgroundAttachment: "fixed",
+          textAlign: "left",
         }}
       >
-        <h1 className="title" style={{margin: "auto",
-            width: "800px"}}>EPOCH</h1>
+        <h1
+          className="title"
+          style={{
+            margin: "auto",
+            width: "800px",
+            position: "relative",
+            overflow: "hidden",
+          }}
+        >
+          EPOCH
+          <FilmGrain />
+        </h1>
         <Box
           sx={{
             margin: "auto",
@@ -92,7 +112,7 @@ export default function Main() {
             color: "white",
             lineHeight: 1.5,
             border: "3px dashed",
-            borderColor: 'white',
+            borderColor: "white",
             textAlign: "left",
             margin: "auto",
             maxWidth: "800px",
@@ -131,7 +151,7 @@ export default function Main() {
             </Text>{" "}
             a social coding event where teens come together to build projects in
             a weekend and share them with the world.
-            <Box sx={{position: 'relative', mt: 3}}>
+            <Box sx={{ position: "relative", mt: 3 }}>
               <Text
                 sx={{
                   background: "white",
@@ -147,10 +167,10 @@ export default function Main() {
                   mt: 2,
                   ml: 2,
                   width: "fit-content",
-                  position: 'absolute',
+                  position: "absolute",
                   top: 10,
                   left: 10,
-                  zIndex: 999
+                  zIndex: 999,
                 }}
               >
                 <Icon glyph="attachment" size={24} />
@@ -171,36 +191,293 @@ export default function Main() {
             fontSize: 4,
           }}
         >
-          50+ of us have came together to put this event together,
-          you may be wondering what attending Epoch will be like. 
-          When we asked around, here's what folks told us 
-          you could expect:
-          <Box sx={{background: '#000', display: 'flex', fontFamily: 'Roboto', border: '3px solid white', borderRadius: 4, overflow: 'hidden'}}>
-            <img src="https://github.com/sampoder.png" height="84px" />
+          50+ of us have came together to put this event together, you may be
+          wondering what attending Epoch will be like. When we asked around,
+          here's what folks told us you could expect:
+          <Box
+            sx={{
+              background: "#000",
+              display: "flex",
+              fontFamily: "Noto Sans",
+              border: "1px solid white",
+              borderRadius: 8,
+              overflow: "hidden",
+              mt: 4,
+              p: 3,
+              gap: 3,
+              fontSize: 2,
+            }}
+          >
+            <Image
+              src="https://github.com/tejasag.png"
+              sx={{
+                borderRadius: 7,
+                height: "84px",
+                width: "84px",
+                flexShrink: "0",
+              }}
+            />
             <Box>
-              <b>@sampoder</b>
-              <p>
-                Epoch will be
-              </p>
+              <b>@tejasag</b>
+              <Box mt={2} sx={{ lineHeight: "1.3" }}>
+                Before my first hackathon, I'd never been in a room with fellow
+                teenagers who found in joy in programming. That's what you have
+                at a hackathon and it's magical.
+              </Box>
+            </Box>
+          </Box>
+          <Box
+            sx={{
+              background: "#000",
+              display: "flex",
+              fontFamily: "Noto Sans",
+              border: "1px solid white",
+              borderRadius: 8,
+              overflow: "hidden",
+              mt: 4,
+              p: 3,
+              gap: 3,
+              fontSize: 2,
+            }}
+          >
+            <Image
+              src="https://github.com/maggie-j-liu.png"
+              sx={{
+                borderRadius: 7,
+                height: "84px",
+                width: "84px",
+                flexShrink: "0",
+              }}
+            />
+            <Box>
+              <b>@maggie-j-liu</b>
+              <Box mt={2} sx={{ lineHeight: "1.3" }}>
+                Before my first hackathon, I'd never been in a room with fellow
+                teenagers who found in joy in programming. That's what you have
+                at a hackathon and it's magical.
+              </Box>
+            </Box>
+          </Box>
+          <Box
+            sx={{
+              background: "#000",
+              display: "flex",
+              fontFamily: "Noto Sans",
+              border: "1px solid white",
+              borderRadius: 8,
+              overflow: "hidden",
+              mt: 4,
+              p: 3,
+              gap: 3,
+              fontSize: 2,
+            }}
+          >
+            <Image
+              src="https://github.com/Nilaany26.png"
+              sx={{
+                borderRadius: 7,
+                height: "84px",
+                width: "84px",
+                flexShrink: "0",
+              }}
+            />
+            <Box>
+              <b>@Nilaany</b>
+              <Box mt={2} sx={{ lineHeight: "1.3" }}>
+                Before my first hackathon, I'd never been in a room with fellow
+                teenagers who found in joy in programming. That's what you have
+                at a hackathon and it's magical.
+              </Box>
+            </Box>
+          </Box>
+          <Box
+            sx={{
+              background: "#000",
+              display: "flex",
+              fontFamily: "Noto Sans",
+              border: "1px solid white",
+              borderRadius: 8,
+              overflow: "hidden",
+              mt: 4,
+              p: 3,
+              gap: 3,
+              fontSize: 2,
+            }}
+          >
+            <Image
+              src="https://github.com/khalby786.png"
+              sx={{
+                borderRadius: 7,
+                height: "84px",
+                width: "84px",
+                flexShrink: "0",
+              }}
+            />
+            <Box>
+              <b>@khalby786</b>
+              <Box mt={2} sx={{ lineHeight: "1.3" }}>
+                Before my first hackathon, I'd never been in a room with fellow
+                teenagers who found in joy in programming. That's what you have
+                at a hackathon and it's magical.
+              </Box>
             </Box>
           </Box>
         </Box>
-      </Box>
-      <Card
+
+        <Box
+          sx={{
+            margin: "auto",
+            width: "800px",
+            mt: 4,
+            fontSize: 4,
+          }}
+        >
+          Teenagers interested in technology: there's no better place to be this
+          New Years than at Epoch. Sign up today to join us for an adventure
+          like none other.
+        </Box>
+        <Card
           sx={{
             background: "dark",
             color: "white",
             lineHeight: 1.5,
             border: "3px dashed",
-            borderColor: 'white',
+            borderColor: "white",
             textAlign: "left",
             margin: "auto",
             maxWidth: "800px",
-            mt: 0
+            mt: 4,
+            textAlign: "center",
           }}
         >
-          <Heading>Frequently Asked Questions</Heading>
-      </Card>
+          <Box sx={{ fontSize: 3, width: "100%" }}>
+            <Grid>
+              <Heading sx={{ color: "white", fontSize: 4, textAlign: "left" }}>
+                Register for Epoch
+              </Heading>
+              <Box sx={{ textAlign: "left" }}>
+                Epoch is open to anyone anywhere 18 or younger. Participation,
+                including meals, costs nothing and travel stipends are
+                available.
+              </Box>
+              <Input
+                placeholder="Name"
+                sx={{
+                  color: "white",
+                  border: "1px solid",
+                  borderColor: "slate",
+                }}
+              />
+              <Input
+                placeholder="Email"
+                sx={{
+                  color: "white",
+                  border: "1px solid",
+                  borderColor: "slate",
+                }}
+              />
+              <Button>Finish More 11 Fields To Register</Button>
+            </Grid>
+          </Box>
+        </Card>
+        <Card
+          sx={{
+            background: "dark",
+            color: "white",
+            lineHeight: 1.5,
+            border: "3px dashed",
+            borderColor: "white",
+            textAlign: "left",
+            margin: "auto",
+            maxWidth: "800px",
+            mt: 4,
+            textAlign: "center",
+          }}
+        >
+          <Grid sx={{ fontSize: 3, width: "100%", textAlign: "left" }}>
+            <Heading sx={{ color: "white", fontSize: 4 }}>The Glossary</Heading>
+            <Box as="details">
+              <Box as="summary">Can I join Epoch?</Box>
+              <Box
+                sx={{
+                  borderTop: "1px solid",
+                  borderColor: "slate",
+                  mt: 2,
+                  pt: 2,
+                }}
+              >
+                If you're eighteen or under, yes, we are so excited to see you
+                in Cyber City! If you're over 18 but still in high school, shoot
+                us a mail at epoch@hackclub.com.
+              </Box>
+            </Box>
+            <Box as="details">
+              <Box as="summary">What do I need?</Box>
+              <Box
+                sx={{
+                  borderTop: "1px solid",
+                  borderColor: "slate",
+                  mt: 2,
+                  pt: 2,
+                }}
+              >
+                Your laptop, chargers, anything for your hack (hardware?),
+                toiletries, sleeping bags, and an open mind.
+              </Box>
+            </Box>
+            <Box as="details">
+              <Box as="summary">How much does it cost?</Box>
+              <Box
+                sx={{
+                  borderTop: "1px solid",
+                  borderColor: "slate",
+                  mt: 2,
+                  pt: 2,
+                }}
+              >
+                Nothing! We’ll have meals, snacks, and beverages onsite at the
+                hackathon, as well as swag, prizes, and fun mini-events.
+              </Box>
+            </Box>
+          </Grid>
+        </Card>
+        <Container variant="copy" mt={5}>
+          <Box
+            sx={{ fontSize: 3, textAlign: "center", fontWeight: 500, mb: 2 }}
+          >
+            We look forward to meeting you at Epoch,
+          </Box>
+          {Object.entries(signatures).map(([name, gh]) => (
+            <Signature
+              src={`http://shhhhhhhh.hackclub.dev/signatures/${name}.png`}
+              href={`https://github.com/${gh}`}
+            />
+          ))}
+          <Box
+            sx={{
+              textAlign: "center",
+              lineHeight: "1.5",
+              mt: 4,
+              opacity: "0.8",
+            }}
+          >
+            An event crafted by the Hack Club community, email us at
+            epoch@hackclub.com.
+            <br /> Source code open sourced at hackclub/www-epoch and finances
+            released on Hack Club Bank.
+            <Image
+            src="https://assets.hackclub.com/flag-standalone-bw.png"
+            sx={{
+              width: "100px",
+              mt: 4,
+              filter: "invert(1)",
+              textAlign: "center",
+            }}
+          />
+          </Box>
+          
+        </Container>
+      </Box>
       <style>
         {`
         
@@ -230,20 +507,27 @@ export default function Main() {
   );
 }
 
-const RundownCard = ({ header = "header", description = "description" }) => (
-  <Box
-    bg="white"
-    p={3}
-    sx={{
-      ":hover": {
-        transform: "translateY(-3px)",
-        transition: "transform 0.2s",
-      },
-      transition: "transform 0.2s",
-      position: "relative",
-      zIndex: "999",
-    }}
-  >
-    <b>{header}</b> {description}
-  </Box>
+const signatures = {
+  belle: "bellesea",
+  benjamin: "bashbaugh",
+  charlie: "tetraoxygen",
+  ella: "exu3",
+  hugo: "Hugoyhu",
+  ian: "YodaLightsabr",
+  ishan: "quackduck",
+  pranav: "pranavnt",
+  sam: "sampoder",
+};
+
+const Signature = ({ href, src, style }) => (
+  <a href={href} target="_blank">
+    <img
+      src={src}
+      style={{
+        maxWidth: "5em",
+        minWidth: "25%",
+        filter: "invert(1)",
+      }}
+    />
+  </a>
 );
