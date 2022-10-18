@@ -18,7 +18,7 @@ export default function Main() {
         name="Epoch ~ Delhi NCR, 30th December 2022"
         title="Epoch ~ Delhi NCR, 30th December 2022"
         description="This coming new year, 150+ teenage hackers will welcome in 2023 together at a high-school hackathon unlike anything Asia has seen before." // page description
-        image="https://cloud-es7s73uc3-hack-club-bot.vercel.app/0meta-assemble.png"
+        image="https://cloud-gr64lwarr-hack-club-bot.vercel.app/0meta-assemble__1_.png"
         color="#C0362C"
       />
       <Layout>
