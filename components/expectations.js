@@ -10,9 +10,9 @@ export default function Expectations() {
         fontSize: 4,
       }}
     >
-      50+ of us have came together to put this event together, you may be
-      wondering what attending Epoch will be like. When we asked around, here's
-      what folks told us you could expect:
+      50+ of us have come together to put this event together! If you're
+      wondering what attending Epoch will be like, Here's
+      what Hack Clubbers told us you could expect:
       <SlackMessage
         username={`tejasag`}
         message={`Before my first hackathon, I'd never been in a room with fellow
