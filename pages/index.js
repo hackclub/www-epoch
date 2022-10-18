@@ -1,4 +1,4 @@
-import Meta from "../components/meta";
+import Meta from "@hackclub/meta";
 import Intro from "../components/intro";
 import Forward from "../components/forward";
 import Details from "../components/details";
@@ -11,30 +11,35 @@ import {
   Text,
   Image,
   Input,
+  Link,
   Button,
 } from "theme-ui";
 import FilmGrain from "../components/filmGrain";
 import Icon from "@hackclub/icons";
-import Assemble from "../public/assemble.jpg";
-import Assemble2 from "../public/assemble2.JPG";
-import Assemble3 from "../public/assemble3.JPG";
-import Assemble4 from "../public/assemble4.JPG";
 import Flag from "../components/flag";
 import MuxPlayer from "@mux/mux-player-react";
+import Head from "next/head";
 
 export default function Main() {
   return (
     <>
       <Flag />
-      <Meta />
+      <Meta
+        as={Head} // component to wrap tags in, defaults to React.Fragment
+        name="Epoch ~ Delhi NCR, 30th December 2022" // site name
+        title="Epoch ~ Delhi NCR, 30th December 2022" // page title
+        description="This coming new year, 150+ teenage hackers will welcome in 2023 together at a high-school hackathon unlike anything Asia has seen before." // page description
+        image="https://cloud-es7s73uc3-hack-club-bot.vercel.app/0meta-assemble.png" // large summary image URL
+        color="#C0362C" // theme color
+      />
       <Box
         sx={{
           textAlign: "center",
           color: "white",
           pt: 5,
           pb: 4,
-          background: `linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6965161064425771) 20%, rgba(0,0,0,0.2987570028011205) 100%), 
-                        url(https://cloud-mm9cx1u00-hack-club-bot.vercel.app/0gurgaon-4.png)`,
+          background: `linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6965161064425771) 20%, rgba(0,0,0,0.7987570028011205) 100%), 
+                        url(https://user-images.githubusercontent.com/39828164/189933158-9f00ceaf-7f61-4bef-9911-4cf4a14e0e4d.png)`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundAttachment: "fixed",
@@ -459,23 +464,40 @@ export default function Main() {
               lineHeight: "1.5",
               mt: 4,
               opacity: "0.8",
+              transition: "linear 0.3s",
+              "&:hover": {
+                opacity: 1,
+              },
             }}
           >
-            An event crafted by the Hack Club community, email us at
-            epoch@hackclub.com.
-            <br /> Source code open sourced at hackclub/www-epoch and finances
-            released on Hack Club Bank.
+            An event crafted by the{" "}
+            <Link href="https://hackclub.com" target="_blank">
+              Hack Club
+            </Link>{" "}
+            community, email us at{" "}
+            <Link href="mailto:epoch@hackclub.com" target="_blank">
+              epoch@hackclub.com
+            </Link>
+            .
+            <br /> Source code open sourced at{" "}
+            <Link href="https://github.com/hackclub/www-epoch" target="_blank">
+              hackclub/www-epoch
+            </Link>{" "}
+            and finances released on{" "}
+            <Link href="https://bank.hackclub.com/epoch" target="_blank">
+              Hack Club Bank
+            </Link>
+            .
             <Image
-            src="https://assets.hackclub.com/flag-standalone-bw.png"
-            sx={{
-              width: "100px",
-              mt: 4,
-              filter: "invert(1)",
-              textAlign: "center",
-            }}
-          />
+              src="https://assets.hackclub.com/flag-standalone-bw.png"
+              sx={{
+                width: "100px",
+                mt: 4,
+                filter: "invert(1)",
+                textAlign: "center",
+              }}
+            />
           </Box>
-          
         </Container>
       </Box>
       <style>
