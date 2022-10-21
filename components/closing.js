@@ -6,10 +6,10 @@ export default function Closing() {
       <Box sx={{ fontSize: 3, textAlign: "center", fontWeight: 500, mb: 2 }}>
         We look forward to meeting you at Epoch,
       </Box>
-      {Object.entries(signatures).map(([name, gh]) => (
+      {signature.map(username => (
         <Signature
-          src={`http://shhhhhhhh.hackclub.dev/signatures/${name}.png`}
-          href={`https://github.com/${gh}`}
+          src={`/signatures/${username}.png`}
+          href={`https://github.com/${username}`}
         />
       ))}
       <Box
@@ -56,17 +56,16 @@ export default function Closing() {
   );
 }
 
-const signatures = {
-  belle: "bellesea",
-  benjamin: "bashbaugh",
-  charlie: "tetraoxygen",
-  ella: "exu3",
-  hugo: "Hugoyhu",
-  ian: "YodaLightsabr",
-  ishan: "quackduck",
-  pranav: "pranavnt",
-  sam: "sampoder",
-};
+const signatures = [
+  "sampoder",
+  "0jas0jas",
+  "arshshrivastavaa",
+  "devenjadhav",
+  "mahi-agarwal",
+  "neiltheghosh",
+  "nilaRam",
+  
+];
 
 const Signature = ({ href, src, style }) => (
   <a href={href} target="_blank">
