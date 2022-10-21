@@ -6,7 +6,7 @@ export default function Closing() {
       <Box sx={{ fontSize: 3, textAlign: "center", fontWeight: 500, mb: 2 }}>
         We look forward to meeting you at Epoch,
       </Box>
-      {signature.map(username => (
+      {signatures.map(username => (
         <Signature
           src={`/signatures/${username}.png`}
           href={`https://github.com/${username}`}
