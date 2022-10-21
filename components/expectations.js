@@ -15,15 +15,12 @@ export default function Expectations() {
       what folks told us you could expect:
       <SlackMessage
         username={`tejasag`}
-        message={`Before my first hackathon, I'd never been in a room with fellow
-      teenagers who found in joy in programming. That's what you have
-      at a hackathon and it's magical.`}
+        message={`My first hackathon was 2 days of coding with like-minded individuals and free food. I am still wondering whether it was really a hackathon or paradise.`}
       />
       <SlackMessage
         username={`maggie-j-liu`}
-        message={`Before my first hackathon, I'd never been in a room with fellow
-      teenagers who found in joy in programming. That's what you have
-      at a hackathon and it's magical.`}
+        image={`/pfps/maggie.png`}
+        message={`At my first in-person hackathon, I met so many students who not only loved to code, but were super friendly. Chatting with other attendees as we walked to lunch or worked on projects was such an amazing experience 😄.`}
       />
       <SlackMessage
         username={`Nilaany`}
