@@ -65,7 +65,8 @@ const signatures = [
   "neiltheghosh",
   "nilaRam",
   "tejasag",
-  "khalby786"
+  "khalby786",
+  "Nilaany26"
 ];
 
 const Signature = ({ href, src, style }) => (

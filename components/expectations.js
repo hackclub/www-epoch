@@ -25,9 +25,7 @@ export default function Expectations() {
       <SlackMessage
         username={`nilaany`}
         image={`https://github.com/Nilaany26.png`}
-        message={`Before my first hackathon, I'd never been in a room with fellow
-      teenagers who found in joy in programming. That's what you have
-      at a hackathon and it's magical.`}
+        message={`My first hackathon made me realize my ability to ideate projects for different prompts within a couple of hours. I loved the whole process of creating something with the wonders of coding!`}
       />
       <SlackMessage
         username={`khalby786`}
