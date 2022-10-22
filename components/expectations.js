@@ -31,9 +31,10 @@ export default function Expectations() {
       />
       <SlackMessage
         username={`khalby786`}
-        message={`Before my first hackathon, I'd never been in a room with fellow
-      teenagers who found in joy in programming. That's what you have
-      at a hackathon and it's magical.`}
+        image={`/pfps/khalby786.JPG`}
+        message={`Hackathons are a magical experience, meeting like-minded people from 
+        different parts of the world and teaming up with them to create technical projects! We share knowledge, stickers, 
+        jokes and snacks, I'll never get tired of those.`}
       />
     </Box>
   );
