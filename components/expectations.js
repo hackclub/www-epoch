@@ -63,6 +63,7 @@ function SlackMessage({ username, message, image }) {
           height: "84px",
           width: "84px",
           flexShrink: "0",
+          objectFit: "cover"
         }}
       />
       <Box>
