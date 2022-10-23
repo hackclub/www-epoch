@@ -30,7 +30,7 @@ export default function Foreword() {
           from around the world.
         </p>
         <p>
-          This coming new year, 150+ teenage hackers will welcome in 2023
+          This New Year's, 150+ teenage hackers will welcome in 2023
           together at a high-school hackathon unlike anything Asia has seen
           before.
         </p>
