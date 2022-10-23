@@ -26,7 +26,7 @@ export default function Foreword() {
         }}
       >
         <p>
-          With every new year comes new possibilities, adventures, and memories
+          With every new year comes new possibilities, adventures, and memories.
           from around the world.
         </p>
         <p>
