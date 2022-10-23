@@ -54,7 +54,7 @@ export default function Register() {
                 borderColor: "slate",
               }}
             />
-            <Button>Finish 11 more fields to register</Button>
+            <Button>Finish 11 more fields to register.</Button>
           </Grid>
         </Box>
       </Card>
