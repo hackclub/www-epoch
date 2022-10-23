@@ -33,7 +33,7 @@ export default function Foreword() {
           together at a high-school hackathon unlike anything Asia has seen
           before.
         </p>
-        <b>All are welcome! RSVP today or read on for more.</b>
+        <b>All are welcome; RSVP today or read on for more.</b>
       </Box>
 
       <Grid
