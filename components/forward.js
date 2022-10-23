@@ -27,7 +27,6 @@ export default function Foreword() {
       >
         <p>
           With every new year comes new possibilities, adventures, and memories.
-          from around the world.
         </p>
         <p>
           This New Year's, 150+ teenage hackers will welcome in 2023
