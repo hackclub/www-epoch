@@ -29,9 +29,11 @@ export default function Glossary() {
         />
         <GlossaryItem
           question={`Can I join Epoch?`}
-          answer={`If you're eighteen or under, yes, we are so excited to see you in
+          answer={<>If you're eighteen or under, yes, we are so excited to see you in
           Cyber City! If you're over 18 but still in high school, shoot us a
-          mail at epoch@hackclub.com.`}
+          mail at <a style={{ color: 'white' }} href="mailto:epoch@hackclub.com">
+                epoch@hackclub.com
+              </a>.<>}
         />
         <GlossaryItem
           question={`I don't live in Delhi and can't pay for travel...`}
