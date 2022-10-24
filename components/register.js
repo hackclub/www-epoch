@@ -1,6 +1,9 @@
 import { Box, Card, Grid, Heading, Input, Button } from "theme-ui";
+import { useState } from 'react'
 
 export default function Register() {
+  const [name, setName] = useState("")
+  const [email, setEmail] = useState("")
   return (
     <>
       <Box
@@ -45,6 +48,7 @@ export default function Register() {
                 border: "1px solid",
                 borderColor: "slate",
               }}
+              onChange={e => setName(e.target.value)}
             />
             <Input
               placeholder="Email"
@@ -53,8 +57,11 @@ export default function Register() {
                 border: "1px solid",
                 borderColor: "slate",
               }}
+              onChange={e => setEmail(e.target.value)}
             />
-            <Button>Finish 11 more fields to register.</Button>
+            <Button as="a" href={`https://register.epoch.hackclub.dev?email=${email}&name=${name}`}>
+              Finish {11 - (name != "" ? 1 : 0) - (email != "" ? 1 : 0)} more fields to register.
+            </Button>
           </Grid>
         </Box>
       </Card>
