@@ -1,6 +1,9 @@
 import { Box, Card, Grid, Heading, Input, Button } from "theme-ui";
+import { useState } from 'react'
 
 export default function Register() {
+  const [name, setName] = useState("")
+  const [email, setEmail] = useState("")
   return (
     <>
       <Box
@@ -47,6 +50,7 @@ export default function Register() {
                 border: "1px solid",
                 borderColor: "slate",
               }}
+              onChange={e => setName(e.target.value)}
             />
             <Input
               placeholder="Email"
@@ -55,13 +59,18 @@ export default function Register() {
                 border: "1px solid",
                 borderColor: "slate",
               }}
+              onChange={e => setEmail(e.target.value)}
             />
-            <Button
+            <Button 
+              as="a" 
               sx={{
-                fontSize: [1, 2, 2],
+                  fontSize: [1, 2, 2],
+                  filter: !(name != "" && email != "") ? `grayscale(1)` : `grayscale(0)`,
+                  pointerEvents: !(name != "" && email != "") ? `none` : `default`
               }}
+              href={`https://register.epoch.hackclub.dev?email=${email}&name=${name}`}
             >
-              Finish More 11 Fields To Register
+              Finish {11 - (name != "" ? 1 : 0) - (email != "" ? 1 : 0)} more fields to register.
             </Button>
           </Grid>
         </Box>
