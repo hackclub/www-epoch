@@ -62,8 +62,8 @@ export default function Register() {
             <Button 
               as="a" 
               sx={{
-                  filter: (name != "" && email != "") ? `grayscale(0)` : `grayscale(1)`,
-                  pointerEvents: (name != "" && email != "") ? `none` : `default`
+                  filter: !(name != "" && email != "") ? `grayscale(0)` : `grayscale(1)`,
+                  pointerEvents: !(name != "" && email != "") ? `none` : `default`
               }}
               href={`https://register.epoch.hackclub.dev?email=${email}&name=${name}`}
             >
