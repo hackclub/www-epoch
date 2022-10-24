@@ -16,6 +16,13 @@
     4px 4px 4px #999, 6px 6px 6px #999, 6px 6px 6px #999,
     0.2em 0.2em 0.25em black;
 }
+
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 4em;
+  } 
+}
+
 @media (min-width: 992px) {
   .title {
     font-size: 9em;

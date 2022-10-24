@@ -1,35 +1,37 @@
-import { Box, Grid } from "theme-ui";
+import { Box, Grid, Heading } from "theme-ui";
 import FilmGrain from "../components/filmGrain";
 
 export default function Foreword() {
   return (
     <>
-      <h1
+      <Heading
         className="title"
-        style={{
+        sx={{
           margin: "auto",
-          width: "800px",
+          width: ["auto", "800px", "800px"],
+          // width: "800px",
           position: "relative",
           overflow: "hidden",
         }}
       >
         EPOCH
         <FilmGrain />
-      </h1>
+      </Heading>
       <Box
         sx={{
           margin: "auto",
-          width: "800px",
+          width: ["auto", "800px", "800px"],
           mt: "-16px",
           mb: 4,
-          fontSize: 3,
+          fontSize: [2, 3, 3],
+          overflow: "hidden",
         }}
       >
         <p>
           With every new year comes new possibilities, adventures, and memories.
         </p>
         <p>
-          This New Year's, 150+ teenage hackers will welcome in 2023
+          This coming new year, 150+ teenage hackers will welcome in 2023
           together at a high-school hackathon unlike anything Asia has seen
           before.
         </p>

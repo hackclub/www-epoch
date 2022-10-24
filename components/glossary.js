@@ -17,7 +17,9 @@ export default function Glossary() {
       }}
     >
       <Grid sx={{ fontSize: 3, width: "100%", textAlign: "left" }}>
-        <Heading sx={{ color: "white", fontSize: 4 }}>The Glossary</Heading>
+        <Heading sx={{ color: "white", fontSize: [3, 4, 4] }}>
+          The Glossary
+        </Heading>
         <GlossaryItem
           question={`Can I join Epoch?`}
           answer={`If you're eighteen or under, yes, we are so excited to see you in

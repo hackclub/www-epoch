@@ -2,6 +2,24 @@ import { Box, Card, Heading, Text } from "theme-ui";
 import Icon from "@hackclub/icons";
 import MuxPlayer from "@mux/mux-player-react";
 
+const Tag = ({ content }) => {
+  return (
+    <Text
+      sx={{
+        background: "white",
+        color: "black",
+        display: "inline-block",
+        py: 1,
+        px: 2,
+        borderRadius: 4,
+        fontSize: [1, 2, 2],
+      }}
+    >
+      {content}
+    </Text>
+  );
+};
+
 export default function Hackathon() {
   return (
     <Card
@@ -17,38 +35,13 @@ export default function Hackathon() {
         mt: 5,
       }}
     >
-      <Heading sx={{ color: "white", fontSize: 5, mb: 3 }}>
+      <Heading sx={{ color: "white", fontSize: [4, 5, 5], mb: 3 }}>
         hackathon /ˈhakəθɒn/
       </Heading>
-      <Box sx={{ fontSize: 3, width: "100%" }}>
-        <Text
-          sx={{
-            background: "white",
-            color: "black",
-            display: "inline-block",
-            py: 1,
-            px: 2,
-            borderRadius: 4,
-            fontSize: 2,
-          }}
-        >
-          noun
-        </Text>{" "}
-        <Text
-          sx={{
-            background: "white",
-            color: "black",
-            display: "inline-block",
-            py: 1,
-            px: 2,
-            borderRadius: 4,
-            fontSize: 2,
-          }}
-        >
-          informal
-        </Text>{" "}
-        a social coding event where teens come together to build projects in a
-        weekend and share them with the world.
+      <Box sx={{ fontSize: [2, 3, 3], width: "100%" }}>
+        <Tag content="noun" /> <Tag content="informal" /> a social coding event
+        where teens come together to build projects in a weekend and share them
+        with the world.
         <Box sx={{ position: "relative", mt: 3 }}>
           <Text
             sx={{
@@ -60,10 +53,10 @@ export default function Hackathon() {
               px: 2,
               borderRadius: 4,
               gap: "6px",
-              fontSize: 3,
+              // fontSize: ["0.75em", 3, 3],
               pr: 3,
-              mt: 2,
-              ml: 2,
+              mt: [0.5, 2, 2],
+              ml: [0.5, 2, 2],
               width: "fit-content",
               position: "absolute",
               top: 10,

@@ -5,9 +5,9 @@ export default function Expectations() {
     <Box
       sx={{
         margin: "auto",
-        width: "800px",
+        width: ["auto", "800px", "800px"],
         mt: 5,
-        fontSize: 4,
+        fontSize: [3, 4, 4],
       }}
     >
       50+ of us have came together to put this event together, you may be
@@ -51,7 +51,7 @@ function SlackMessage({ username, message, image }) {
         mt: 4,
         p: 3,
         gap: 3,
-        fontSize: 2,
+        fontSize: [1, 2, 2],
       }}
     >
       <Image
@@ -61,7 +61,7 @@ function SlackMessage({ username, message, image }) {
           height: "84px",
           width: "84px",
           flexShrink: "0",
-          objectFit: "cover"
+          objectFit: "cover",
         }}
       />
       <Box>
