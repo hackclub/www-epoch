@@ -6,9 +6,9 @@ export default function Register() {
       <Box
         sx={{
           margin: "auto",
-          width: "800px",
+          width: ["auto", "800px", "800px"],
           mt: 4,
-          fontSize: 4,
+          fontSize: [3, 4, 4],
         }}
       >
         Teenagers interested in technology: there's no better place to be this
@@ -29,9 +29,11 @@ export default function Register() {
           textAlign: "center",
         }}
       >
-        <Box sx={{ fontSize: 3, width: "100%" }}>
+        <Box sx={{ fontSize: [2, 3, 3], width: "100%" }}>
           <Grid>
-            <Heading sx={{ color: "white", fontSize: 4, textAlign: "left" }}>
+            <Heading
+              sx={{ color: "white", fontSize: [3, 4, 4], textAlign: "left" }}
+            >
               Register for Epoch
             </Heading>
             <Box sx={{ textAlign: "left" }}>
@@ -54,7 +56,13 @@ export default function Register() {
                 borderColor: "slate",
               }}
             />
-            <Button>Finish More 11 Fields To Register</Button>
+            <Button
+              sx={{
+                fontSize: [1, 2, 2],
+              }}
+            >
+              Finish More 11 Fields To Register
+            </Button>
           </Grid>
         </Box>
       </Card>
