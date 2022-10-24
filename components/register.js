@@ -59,7 +59,14 @@ export default function Register() {
               }}
               onChange={e => setEmail(e.target.value)}
             />
-            <Button as="a" href={`https://register.epoch.hackclub.dev?email=${email}&name=${name}`}>
+            <Button 
+              as="a" 
+              sx={{
+                  filter: (name != "" && email != "") ? `grayscale(0)` : `grayscale(1)`,
+                  pointerEvents: (name != "" && email != "") ? `none` : `default`
+              }}
+              href={`https://register.epoch.hackclub.dev?email=${email}&name=${name}`}
+            >
               Finish {11 - (name != "" ? 1 : 0) - (email != "" ? 1 : 0)} more fields to register.
             </Button>
           </Grid>
