@@ -28,15 +28,14 @@ export default function Foreword() {
         }}
       >
         <p>
-          With every new year, comes new possibilities, adventures, and memories
-          around the world.
+          With every new year comes new possibilities, adventures, and memories.
         </p>
         <p>
           This coming new year, 150+ teenage hackers will welcome in 2023
           together at a high-school hackathon unlike anything Asia has seen
           before.
         </p>
-        <b>All are welcome, RSVP today or read on for more.</b>
+        <b>All are welcome; RSVP today or read on for more.</b>
       </Box>
 
       <Grid
@@ -59,7 +58,7 @@ export default function Foreword() {
           Cyber City, Delhi NCR
         </Box>
         <Box sx={{ padding: "16px", background: "purple", borderRadius: 4 }}>
-          ₹12.5 Lakh in Travel Grants
+          ₹12.5 Lakh in travel grants
         </Box>
         <Box
           sx={{
