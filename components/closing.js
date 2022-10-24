@@ -66,6 +66,7 @@ const signatures = [
   "nilaRam",
   "tejasag",
   "khalby786",
+  "arashnrim",
   "Nilaany26"
 ];
 
