@@ -44,7 +44,7 @@ export default function Glossary() {
               attendees. Please request one on the registration form if needed.
               If you're travelling internationally, we have prepared this{' '}
               <a
-                style={{ color: 'black' }}
+                style={{ color: 'white' }}
                 href=""
               >
                 guide
@@ -71,7 +71,7 @@ export default function Glossary() {
               you'd like to start exploring some introductory projects, check
               out{' '}
               <a
-                style={{ color: 'black' }}
+                style={{ color: 'white' }}
                 href="https://workshops.hackclub.com"
               >
                 Hack Club Workshops
@@ -89,7 +89,7 @@ export default function Glossary() {
               you'd like to start exploring some introductory projects, check
               out{' '}
               <a
-                style={{ color: 'black' }}
+                style={{ color: 'white' }}
                 href="https://workshops.hackclub.com"
               >
                 Hack Club Workshops
@@ -109,11 +109,11 @@ export default function Glossary() {
             <>
               Anything! Apps, art, sites, and hardware projects are all perfect
               for a hackathon. Check out what{' '}
-              <a style={{ color: 'black' }} href="https://hackclub.com/">
+              <a style={{ color: 'white' }} href="https://hackclub.com/">
                 Hack Clubbers
               </a>{' '}
               are{' '}
-              <a style={{ color: 'black' }} href="https://hackclub.com/ship/">
+              <a style={{ color: 'white' }} href="https://hackclub.com/ship/">
                 making every day
               </a>
               !
@@ -135,7 +135,7 @@ export default function Glossary() {
           answer={
             <>
               We're here to help, ask them to reach out to us at{' '}
-              <a style={{ color: 'black' }} href="mailto:epoch@hackclub.com">
+              <a style={{ color: 'white' }} href="mailto:epoch@hackclub.com">
                 epoch@hackclub.com
               </a>{' '}
               and we'll make sure to answer all their questions. Epoch will
