@@ -12,7 +12,7 @@ export default function Register() {
         }}
       >
         Teenagers interested in technology: there's no better place to be this
-        New Years than at Epoch. Sign up today to join us for an adventure like
+        New Year's than at Epoch. Sign up today to join us for an adventure like
         none other.
       </Box>
       <Card
@@ -54,7 +54,7 @@ export default function Register() {
                 borderColor: "slate",
               }}
             />
-            <Button>Finish More 11 Fields To Register</Button>
+            <Button>Finish 11 more fields to register.</Button>
           </Grid>
         </Box>
       </Card>
