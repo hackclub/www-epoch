@@ -60,15 +60,15 @@ const signatures = [
   "sampoder",
   "0jas0jas",
   "arshshrivastavaa",
-  "devenjadhav",
   "mahi-agarwal",
+  "devenjadhav",
   "neiltheghosh",
   "nilaRam",
   "tejasag",
   "khalby786",
+  "faisalsayed10",
   "arashnrim",
-  "Nilaany26",
-  "faisalsayed10"
+  "Nilaany26"
 ];
 
 const Signature = ({ href, src, style }) => (

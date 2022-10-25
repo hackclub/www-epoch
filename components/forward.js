@@ -3,6 +3,14 @@ import FilmGrain from "../components/filmGrain";
 import { Text, Button } from "theme-ui";
 import { useState } from "react";
 
+let hoverable = {
+  cursor: 'pointer', 
+  transition: 'transform .125s ease-in-out, box-shadow .125s ease-in-out',
+  '&:hover': {
+    transform: 'scale(1.05)'
+  }
+}
+
 function Modal(props) {
   return (
     <Box
@@ -192,13 +200,11 @@ export default function Forward() {
           }}
         >
           <Box
-            onClick={() => setOpen(true)}
             sx={{ padding: "16px", background: "green", borderRadius: 4 }}
           >
             December 30th to January 1st
           </Box>
           <Box
-            onClick={() => setOpen(true)}
             sx={{ padding: "16px", background: "blue", borderRadius: 4 }}
           >
             Doors open at 6PM
@@ -208,7 +214,7 @@ export default function Forward() {
               setIndex(1);
               setOpen(true);
             }}
-            sx={{ padding: "16px", background: "orange", borderRadius: 4 }}
+            sx={{ padding: "16px", background: "orange", borderRadius: 4, ...hoverable }}
           >
             Cyber City, Delhi NCR
           </Box>
@@ -217,7 +223,7 @@ export default function Forward() {
               setIndex(2);
               setOpen(true);
             }}
-            sx={{ padding: "16px", background: "purple", borderRadius: 4 }}
+            sx={{ padding: "16px", background: "purple", borderRadius: 4, ...hoverable }}
           >
             ₹12.5 Lakh in travel stipends
           </Box>
@@ -231,6 +237,7 @@ export default function Forward() {
               background: "red",
               borderRadius: 4,
               gridColumn: "1 / span 2",
+              ...hoverable
             }}
           >
             Organised by the Hack Club community, for you.
