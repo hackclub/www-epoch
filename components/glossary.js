@@ -33,18 +33,15 @@ export default function Glossary() {
           Cyber City! If you're over 18 but still in high school, shoot us a
           mail at <a style={{ color: 'white' }} href="mailto:epoch@hackclub.com">
                 epoch@hackclub.com
-              </a>.<>}
+              </a>.</>}
         />
         <GlossaryItem
           question={`I don't live in Delhi and can't pay for travel...`}
-          answer={`We're providing travel stipends to both domestic and international attendees. 
-          Please request one on the registration form if needed. If you're travelling internationally, 
-          we can also support with the visa process.`}
           answer={
             <>
               We're providing travel stipends to both domestic and international
               attendees. Please request one on the registration form if needed.
-              If you're travelling internationally, we have prepared this{' '}
+              If you're traveling internationally, we have prepared this{' '}
               <a
                 style={{ color: 'white' }}
                 href=""

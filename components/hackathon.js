@@ -61,7 +61,7 @@ export default function Hackathon() {
               position: "absolute",
               top: 10,
               left: 10,
-              zIndex: 999,
+              zIndex: 998,
             }}
           >
             <Icon glyph="attachment" size={24} />
