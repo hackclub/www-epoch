@@ -44,7 +44,6 @@ function SlackMessage({ username, message, image }) {
       sx={{
         background: "#000",
         display: "flex",
-        fontFamily: "Noto Sans",
         border: "1px solid white",
         borderRadius: 8,
         overflow: "hidden",

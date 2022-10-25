@@ -17,7 +17,7 @@ export default function Closing() {
           textAlign: "center",
           lineHeight: "1.5",
           mt: 4,
-          opacity: "0.8",
+          opacity: "0.6",
           transition: "linear 0.3s",
           "&:hover": {
             opacity: 1,
@@ -41,7 +41,7 @@ export default function Closing() {
         <Link href="https://bank.hackclub.com/epoch" target="_blank">
           Hack Club Bank
         </Link>
-        .
+        .<br />
         <Image
           src="https://assets.hackclub.com/flag-standalone-bw.png"
           sx={{

@@ -15,7 +15,7 @@ export default function Register() {
         }}
       >
         Teenagers interested in technology: there's no better place to be this
-        New Year's than at Epoch. Register today to join us for an adventure like
+        New Year's than at Epoch. <br /> <br />Register today to join us for an adventure like
         none other.
       </Box>
       <Card
@@ -64,6 +64,7 @@ export default function Register() {
             <Button 
               as="a" 
               sx={{
+                borderRadius: '4px',
                   fontSize: [1, 2, 2],
                   filter: !(name != "" && email != "") ? `grayscale(1)` : `grayscale(0)`,
                   pointerEvents: !(name != "" && email != "") ? `none` : `default`

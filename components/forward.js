@@ -2,14 +2,16 @@ import { Box, Grid, Heading, Image, Link } from "theme-ui";
 import FilmGrain from "../components/filmGrain";
 import { Text, Button } from "theme-ui";
 import { useState } from "react";
+import theme from "../lib/theme";
+import Sparkles from "./sparkles";
 
 let hoverable = {
-  cursor: 'pointer', 
-  transition: 'transform .125s ease-in-out, box-shadow .125s ease-in-out',
-  '&:hover': {
-    transform: 'scale(1.05)'
-  }
-}
+  cursor: "pointer",
+  transition: "transform .125s ease-in-out, box-shadow .125s ease-in-out",
+  "&:hover": {
+    transform: "scale(1.05)",
+  },
+};
 
 function Modal(props) {
   return (
@@ -154,24 +156,27 @@ export default function Forward() {
     <>
       <Modal open={open} data={modalData[index]} setOpen={setOpen} />
       <Box>
-        <Heading
-          className="title"
-          sx={{
-            margin: "auto",
-            width: ["auto", "800px", "800px"],
-            // width: "800px",
-            position: "relative",
-            overflow: "hidden",
-          }}
-        >
-          EPOCH
-          <FilmGrain />
-        </Heading>
+        <Box sx={{ margin: "auto", width: ["auto", "800px", "800px"] }}>
+          <Sparkles>
+            <Heading
+              className="title"
+              sx={{
+                position: "relative",
+                overflow: "hidden",
+                ...theme.util.gxText("blue", "cyan"),
+                textShadow: "#fff 1px",
+                WebkitTextStroke: "3px white",
+              }}
+            >
+              EPOCH
+            </Heading>
+          </Sparkles>
+        </Box>
         <Box
           sx={{
             margin: "auto",
             width: ["auto", "800px", "800px"],
-            mt: "-16px",
+            mt: "-32px",
             mb: 4,
             fontSize: [2, 3, 3],
             overflow: "hidden",
@@ -199,14 +204,10 @@ export default function Forward() {
             fontWeight: 600,
           }}
         >
-          <Box
-            sx={{ padding: "16px", background: "green", borderRadius: 4 }}
-          >
+          <Box sx={{ padding: "16px", background: "green", borderRadius: 4 }}>
             December 30th to January 1st
           </Box>
-          <Box
-            sx={{ padding: "16px", background: "blue", borderRadius: 4 }}
-          >
+          <Box sx={{ padding: "16px", background: "blue", borderRadius: 4 }}>
             Doors open at 6PM
           </Box>
           <Box
@@ -214,7 +215,12 @@ export default function Forward() {
               setIndex(1);
               setOpen(true);
             }}
-            sx={{ padding: "16px", background: "orange", borderRadius: 4, ...hoverable }}
+            sx={{
+              padding: "16px",
+              background: "orange",
+              borderRadius: 4,
+              ...hoverable,
+            }}
           >
             Cyber City, Delhi NCR
           </Box>
@@ -223,7 +229,12 @@ export default function Forward() {
               setIndex(2);
               setOpen(true);
             }}
-            sx={{ padding: "16px", background: "purple", borderRadius: 4, ...hoverable }}
+            sx={{
+              padding: "16px",
+              background: "purple",
+              borderRadius: 4,
+              ...hoverable,
+            }}
           >
             ₹12.5 Lakh in travel stipends
           </Box>
@@ -237,7 +248,7 @@ export default function Forward() {
               background: "red",
               borderRadius: 4,
               gridColumn: "1 / span 2",
-              ...hoverable
+              ...hoverable,
             }}
           >
             Organised by the Hack Club community, for you.
