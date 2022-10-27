@@ -26,6 +26,7 @@ function Modal(props) {
         zIndex: "999",
         top: 0,
         background: `rgba(0, 0, 0, 0.7)`,
+        color: 'white'
       }}
       onClick={() => props.setOpen(false)}
     >
@@ -155,60 +156,20 @@ export default function Forward() {
   return (
     <>
       <Modal open={open} data={modalData[index]} setOpen={setOpen} />
-      <Box>
-        <Box sx={{ margin: "auto", width: ["auto", "800px", "800px"] }}>
-          <Sparkles>
-            <Heading
-              className="title"
-              sx={{
-                position: "relative",
-                overflow: "hidden",
-                ...theme.util.gxText("blue", "cyan"),
-                textShadow: "#fff 1px",
-                WebkitTextStroke: "3px white",
-              }}
-            >
-              EPOCH
-            </Heading>
-          </Sparkles>
-        </Box>
-        <Box
-          sx={{
-            margin: "auto",
-            width: ["auto", "800px", "800px"],
-            mt: "-32px",
-            mb: 4,
-            fontSize: [2, 3, 3],
-            overflow: "hidden",
-          }}
-        >
-          <p>
-            With every new year comes new possibilities, adventures, and
-            memories.
-          </p>
-          <p>
-            This coming new year, 150+ teenage hackers will welcome in 2023
-            together at a high-school hackathon unlike anything Asia has seen
-            before.
-          </p>
-          <b>All are welcome; RSVP today or read on for more.</b>
-        </Box>
-
+      <Box mt={3}>
         <Grid
           columns={2}
           sx={{
             gap: 3,
-            maxWidth: "800px",
+            mt: 4,
             margin: "auto",
             fontSize: "1.5em",
             fontWeight: 600,
+            color: 'white'
           }}
         >
           <Box sx={{ padding: "16px", background: "green", borderRadius: 4 }}>
             December 30th to January 1st
-          </Box>
-          <Box sx={{ padding: "16px", background: "blue", borderRadius: 4 }}>
-            Doors open at 6PM
           </Box>
           <Box
             onClick={() => {
@@ -247,7 +208,6 @@ export default function Forward() {
               padding: "16px",
               background: "red",
               borderRadius: 4,
-              gridColumn: "1 / span 2",
               ...hoverable,
             }}
           >

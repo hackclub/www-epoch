@@ -1,18 +1,20 @@
-import { Box, Image } from "theme-ui";
+import { Box, Container, Grid, Image } from "theme-ui";
 
 export default function Expectations() {
   return (
     <Box
       sx={{
-        margin: "auto",
-        width: ["auto", "800px", "800px"],
-        mt: 5,
         fontSize: [3, 4, 4],
+        pt: 5,
+        
       }}
     >
-      50+ Hack Clubbers have came together to put this event together, you may be
-      wondering what attending Epoch will be like. When we asked around, here's
-      what folks told us you could expect:
+      <Box sx={{width: '800px', margin: 'auto', textAlign: 'center', fontWeight: 400, textShadow: 'elevated'}}>
+      50+ Hack Clubbers have came together to organise this event, you may be
+      wondering what attending Epoch will be like; here's
+      what folks told us you could expect:</Box>
+
+        <Grid columns={2} px={4} mt={4}>
       <SlackMessage
         username={`tejasag`}
         message={`My first hackathon was 2 days of coding with like-minded individuals and free food. I am still wondering whether it was really a hackathon or paradise.`}
@@ -33,7 +35,7 @@ export default function Expectations() {
         message={`Hackathons are a magical experience, meeting like-minded people from 
         different parts of the world and teaming up with them to create technical projects! We share knowledge, stickers, 
         jokes and snacks, I'll never get tired of those.`}
-      />
+      /></Grid>
     </Box>
   );
 }
@@ -42,12 +44,11 @@ function SlackMessage({ username, message, image }) {
   return (
     <Box
       sx={{
-        background: "#000",
+        background: "rgba(0, 0, 0, 0.6)",
         display: "flex",
         border: "1px solid white",
         borderRadius: 8,
         overflow: "hidden",
-        mt: 4,
         p: 3,
         gap: 3,
         fontSize: [1, 2, 2],
@@ -65,7 +66,7 @@ function SlackMessage({ username, message, image }) {
       />
       <Box>
         <b>@{username}</b>
-        <Box mt={2} sx={{ lineHeight: "1.3" }}>
+        <Box mt={1} mb={2} sx={{ lineHeight: "1.3" }}>
           {message}
         </Box>
       </Box>

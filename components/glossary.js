@@ -7,7 +7,7 @@ export default function Glossary() {
         background: "dark",
         color: "white",
         lineHeight: 1.5,
-        border: "3px dashed",
+        border: "2px solid",
         borderColor: "white",
         textAlign: "left",
         margin: "auto",
