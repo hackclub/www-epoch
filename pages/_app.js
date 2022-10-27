@@ -6,7 +6,10 @@ import '@hackclub/theme/fonts/reg-bold.css'
 
 const App = ({ Component, pageProps }) => {
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={{...theme,colors: {
+      ...theme.colors,
+      modes: {}
+    }}}>
       <Component {...pageProps} />
     </ThemeProvider>
   )
