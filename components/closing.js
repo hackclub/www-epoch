@@ -10,6 +10,7 @@ export default function Closing() {
         <Signature
           src={`/signatures/${username}.png`}
           href={`https://github.com/${username}`}
+          key={username}
         />
       ))}
       <Box
