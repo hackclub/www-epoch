@@ -91,12 +91,21 @@ export default function Hackathon() {
           </Box>
         </Box>
       </Box>
-      <Flex sx={{flexDirection: 'column', height: '100%'}}>
-        {[[AssembleTwo, theme.colors.red], [AssembleThree, theme.colors.blue], [AssembleFour, theme.colors.green]].map((x) => (
+      <Flex sx={{ flexDirection: "column", height: "100%" }}>
+        {[
+          [AssembleTwo, theme.colors.red, "175 Hackers"],
+          [AssembleThree, theme.colors.blue, "42 Hours"],
+          [
+            AssembleFour,
+            theme.colors.green,
+            <Text sx={{ display: "inline-flex", gap: 2, alignItems: 'center' }}>
+              <Text sx={{fontSize: '1.3em'}}>∞</Text> Creativity</Text>,
+          ],
+        ].map((x) => (
           <Box
             sx={{
               position: "relative",
-              height: '100%'
+              height: "100%",
             }}
           >
             <Box
@@ -105,13 +114,14 @@ export default function Hackathon() {
                 position: "absolute",
                 width: "100%",
                 height: "100%",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
                 backgroundImage: `linear-gradient(90deg, rgba(${
                   hexToRgb(x[1]).r
-                },${hexToRgb(x[1]).g},${
-                  hexToRgb(x[1]).b
-                },0.5) 0%, rgba(${hexToRgb(x[1]).r},${
-                  hexToRgb(x[1]).g
-                },${hexToRgb(x[1]).b},0.5) 100%)`,
+                },${hexToRgb(x[1]).g},${hexToRgb(x[1]).b},0.5) 0%, rgba(${
+                  hexToRgb(x[1]).r
+                },${hexToRgb(x[1]).g},${hexToRgb(x[1]).b},0.5) 100%)`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 "&>.external": {
@@ -126,12 +136,16 @@ export default function Hackathon() {
                 },
               }}
             >
-              <Box
-                sx={{ color: "white", float: "right", p: 1 }}
-                className="external"
+              <Heading
+                sx={{
+                  fontSize: "7.5vw",
+                  WebkitTextStroke: "white",
+                  WebkitTextStrokeWidth: ["2px", "3px"],
+                  WebkitTextFillColor: "transparent",
+                }}
               >
-                <Icon glyph="external" />
-              </Box>
+                {x[2]}
+              </Heading>
             </Box>
             <Image
               placeholder="blur"

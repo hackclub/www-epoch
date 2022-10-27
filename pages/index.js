@@ -90,10 +90,9 @@ export default function Main() {
       </Flex>
       <Hackathon />
       <Layout>
-        
+        <Glossary />
         <Expectations />
         <Register />
-        <Glossary />
         <Closing />
       </Layout>
     </>

@@ -6,36 +6,45 @@ export default function Expectations() {
       sx={{
         fontSize: [3, 4, 4],
         pt: 5,
-        
       }}
     >
-      <Box sx={{width: '800px', margin: 'auto', textAlign: 'center', fontWeight: 400, textShadow: 'elevated'}}>
-      50+ Hack Clubbers have came together to organise this event, you may be
-      wondering what attending Epoch will be like; here's
-      what folks told us you could expect:</Box>
+      <Box
+        sx={{
+          width: "800px",
+          margin: "auto",
+          textAlign: "center",
+          fontWeight: 400,
+          textShadow: "elevated",
+        }}
+      >
+        50+ Hack Clubbers have came together to organise this event, you may be
+        wondering what attending Epoch will be like; here's what they told us
+        you could expect:
+      </Box>
 
-        <Grid columns={2} px={4} mt={4}>
-      <SlackMessage
-        username={`tejasag`}
-        message={`My first hackathon was 2 days of coding with like-minded individuals and free food. I am still wondering whether it was really a hackathon or paradise.`}
-      />
-      <SlackMessage
-        username={`maggie-j-liu`}
-        image={`/pfps/maggie.png`}
-        message={`At my first in-person hackathon, I met so many students who not only loved to code, but were super friendly. Chatting with other attendees as we walked to lunch or worked on projects was such an amazing experience 😄.`}
-      />
-      <SlackMessage
-        username={`nilaany`}
-        image={`https://github.com/Nilaany26.png`}
-        message={`My first hackathon made me realize my ability to ideate projects for different prompts within a couple of hours. I loved the whole process of creating something with the wonders of coding!`}
-      />
-      <SlackMessage
-        username={`khalby786`}
-        image={`/pfps/khalby786.JPG`}
-        message={`Hackathons are a magical experience, meeting like-minded people from 
+      <Grid columns={2} px={4} mt={4}>
+        <SlackMessage
+          username={`tejasag`}
+          message={`My first hackathon was 2 days of coding with like-minded individuals and free food. I am still wondering whether it was really a hackathon or paradise.`}
+        />
+        <SlackMessage
+          username={`maggie-j-liu`}
+          image={`/pfps/maggie.png`}
+          message={`At my first in-person hackathon, I met so many students who not only loved to code, but were super friendly. Chatting with other attendees as we walked to lunch or worked on projects was such an amazing experience 😄.`}
+        />
+        <SlackMessage
+          username={`nilaany`}
+          image={`https://github.com/Nilaany26.png`}
+          message={`My first hackathon made me realize my ability to ideate projects for different prompts within a couple of hours. I loved the whole process of creating something with the wonders of coding!`}
+        />
+        <SlackMessage
+          username={`khalby786`}
+          image={`/pfps/khalby786.JPG`}
+          message={`Hackathons are a magical experience, meeting like-minded people from 
         different parts of the world and teaming up with them to create technical projects! We share knowledge, stickers, 
         jokes and snacks, I'll never get tired of those.`}
-      /></Grid>
+        />
+      </Grid>
     </Box>
   );
 }

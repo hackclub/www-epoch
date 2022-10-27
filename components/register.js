@@ -1,5 +1,6 @@
 import { Box, Card, Grid, Heading, Input, Button } from "theme-ui";
 import { useState } from 'react'
+import theme from "@hackclub/theme";
 
 export default function Register() {
   const [name, setName] = useState("")
@@ -22,7 +23,7 @@ export default function Register() {
       </Box>
       <Card
         sx={{
-          background: "dark",
+          background: "rgba(0,0,0,0.5)",
           color: "white",
           lineHeight: 1.5,
           border: "2px solid",
@@ -67,8 +68,9 @@ export default function Register() {
               sx={{
                 borderRadius: '4px',
                   fontSize: [1, 2, 2],
-                  filter: !(name != "" && email != "") ? `grayscale(1)` : `grayscale(0)`,
-                  pointerEvents: !(name != "" && email != "") ? `none` : `default`
+                  pointerEvents: !(name != "" && email != "") ? `none` : `default`,
+                  opacity: !(name != "" && email != "") ? 0.7 : 1,
+                  background: theme.util.gx("orange", "red"),
               }}
               href={`https://register.epoch.hackclub.dev?email=${email}&name=${name}`}
             >
