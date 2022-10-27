@@ -23,7 +23,7 @@ export default function Register() {
       </Box>
       <Card
         sx={{
-          background: "rgba(0,0,0,0.5)",
+          background: theme.util.gx("black", "darker"),
           color: "white",
           lineHeight: 1.5,
           border: "2px solid",

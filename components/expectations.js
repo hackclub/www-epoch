@@ -53,9 +53,11 @@ function SlackMessage({ username, message, image }) {
   return (
     <Box
       sx={{
-        background: "rgba(0, 0, 0, 0.6)",
+        background: "white",
         display: "flex",
-        border: "1px solid white",
+        border: "1px solid",
+        borderColor: 'black',
+        color: 'black',
         borderRadius: 8,
         overflow: "hidden",
         p: 3,
