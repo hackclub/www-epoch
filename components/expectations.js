@@ -10,7 +10,7 @@ export default function Expectations() {
         fontSize: [3, 4, 4],
       }}
     >
-      50+ Hack Clubbers have came together to put this event together, you may be
+      50+ Hack Clubbers have come together to put this event together, and you may be
       wondering what attending Epoch will be like. When we asked around, here's
       what folks told us you could expect:
       <SlackMessage
