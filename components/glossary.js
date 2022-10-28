@@ -80,24 +80,6 @@ export default function Glossary() {
           }
         />
         <GlossaryItem
-          question="I'm not that good at coding..."
-          answer={
-            <>
-              This hackathon is for hackers of all skill levels! We'll have
-              workshops and other events so join us and let's learn together. If
-              you'd like to start exploring some introductory projects, check
-              out{' '}
-              <a
-                style={{ color: 'white' }}
-                href="https://workshops.hackclub.com"
-              >
-                Hack Club Workshops
-              </a>{' '}
-              .
-            </>
-          }
-        />
-        <GlossaryItem
           question={`How much does it cost?`}
           answer={`Nothing! We’ll have meals, snacks, and beverages onsite at the
             hackathon, as well as swag, prizes, and fun mini-events.`}
