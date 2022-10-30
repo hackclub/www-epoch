@@ -118,6 +118,7 @@ export default function Main() {
                 textAlign: "left",
                 textTransform: "uppercase",
                 mt: 4,
+                fontFamily: `"IBM Plex Mono"`
               }}
             >
               <Box

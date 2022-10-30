@@ -76,24 +76,9 @@ export default function Hackathon() {
         >
           Hackathon.
         </Heading>
-        <Heading
-          sx={{
-            fontSize: [3, 4, 4],
-            mb: 3,
-            fontFamily: '"Fira Code"',
-            background: `linear-gradient(180deg, rgba(255, 71, 148, 0) 8.14%, #AFAFAF 30.78%)`,
-      
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent',
-            position: 'relative',
-            zIndex: '999'
-              }}
-        >
-          /ˈhakəθɒn/
-        </Heading>
-        <Box sx={{ fontSize: [2, 3, 3], width: "100%" }}>
+        <Box sx={{ fontSize: [2, 3, 3], width: "100%", mt: 3 }}>
           a social coding
-          event where teens come together to build projects in a weekend and
+          event where teens come together to build creative projects in a weekend and
           share them with the world.
           <Box sx={{ position: "relative", mt: 3 }}>
             <Text

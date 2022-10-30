@@ -5,8 +5,8 @@ export default function Glossary() {
   return (
     <Box
       sx={{
-        background: theme.util.gx("purple", "rgb(157,58,249)"),
-        color: "white",
+        background: "white",
+        color: "black",
         lineHeight: 1.5,
         textAlign: "left",
         textAlign: "center",
@@ -14,7 +14,7 @@ export default function Glossary() {
       }}
     >
       <Grid sx={{ width: "100%", textAlign: "left" }}>
-        <Heading sx={{ color: "white", fontSize: [3, 5, 5] }}>
+        <Heading sx={{ color: "black", fontSize: [3, 5, 5], textAlign: 'center' }}>
           Everything You Kneed To Know
         </Heading>
         <Grid columns={2}>
@@ -120,7 +120,7 @@ export default function Glossary() {
               }
             />
             <GlossaryItem
-              question="My parents are worried! How can I convince them?"
+              question="My parents are worried! What should I do?"
               answer={
                 <>
                   We're here to help, ask them to reach out to us at{" "}
@@ -147,10 +147,12 @@ function GlossaryItem({ question, answer }) {
     <Box
       sx={{
         bg: "white",
-        color: "rgba(0,0,0,0.6)",
+        color: "slate",
         py: 2,
         px: 3,
         borderRadius: 4,
+        border: '1px solid',
+        borderColor: 'slate'
       }}
     >
       <Box as="details">
