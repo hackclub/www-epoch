@@ -1,25 +1,24 @@
 import { Box, Card, Grid, Heading, Input, Button } from "theme-ui";
-import { useState } from 'react'
+import { useState } from "react";
 import theme from "@hackclub/theme";
 
 export default function Register() {
-  const [name, setName] = useState("")
-  const [email, setEmail] = useState("")
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
   return (
     <>
       <Box
         sx={{
           margin: "auto",
           width: ["auto", "800px", "800px"],
-          mt: 4,
+          mt: 5,
           fontSize: [3, 4, 4],
-          textAlign: 'center',
-          textShadow: 'elevated'
+          textAlign: "center",
+          textShadow: "elevated",
         }}
       >
-        Teenagers interested in technology: there's no better place to be this
-        New Year's than at Epoch. {" "}<b>Register today to join Hack Club on an adventure like
-        none other.</b>
+        50+ Hack Clubbers have came together to organise this event; <b>join us on an
+        adventure like none other.</b>
       </Box>
       <Card
         sx={{
@@ -48,9 +47,9 @@ export default function Register() {
                 border: "1px solid",
                 borderColor: "slate",
                 textAlign: "center",
-                color: 'text'
+                color: "text",
               }}
-              onChange={e => setName(e.target.value)}
+              onChange={(e) => setName(e.target.value)}
             />
             <Input
               placeholder="Your Email"
@@ -59,22 +58,25 @@ export default function Register() {
                 border: "1px solid",
                 borderColor: "slate",
                 textAlign: "center",
-                color: 'text'
+                color: "text",
               }}
-              onChange={e => setEmail(e.target.value)}
+              onChange={(e) => setEmail(e.target.value)}
             />
-            <Button 
-              as="a" 
+            <Button
+              as="a"
               sx={{
-                borderRadius: '4px',
-                  fontSize: [1, 2, 2],
-                  pointerEvents: !(name != "" && email != "") ? `none` : `default`,
-                  opacity: !(name != "" && email != "") ? 0.7 : 1,
-                  background: theme.util.gx("orange", "red"),
+                borderRadius: "4px",
+                fontSize: [1, 2, 2],
+                pointerEvents: !(name != "" && email != "")
+                  ? `none`
+                  : `default`,
+                opacity: !(name != "" && email != "") ? 0.7 : 1,
+                background: theme.util.gx("orange", "red"),
               }}
               href={`https://register.epoch.hackclub.dev?email=${email}&name=${name}`}
             >
-              Finish {11 - (name != "" ? 1 : 0) - (email != "" ? 1 : 0)} more fields to register.
+              Finish {11 - (name != "" ? 1 : 0) - (email != "" ? 1 : 0)} more
+              fields to register.
             </Button>
           </Grid>
         </Box>

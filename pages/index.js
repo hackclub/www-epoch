@@ -138,7 +138,6 @@ export default function Main() {
       <Hackathon />
       <Layout>
         <Glossary />
-        <Expectations />
         <Register />
         <Closing />
       </Layout>
