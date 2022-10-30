@@ -77,7 +77,7 @@ export default function Hackathon() {
           Hackathon.
         </Heading>
         <Box sx={{ fontSize: [2, 3, 3], width: "100%", mt: 3 }}>
-          a social coding
+          Epoch is a social coding
           event where teens come together to build creative projects in a weekend and
           share them with the world.
           <Box sx={{ position: "relative", mt: 3 }}>

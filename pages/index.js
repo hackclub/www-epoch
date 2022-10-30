@@ -29,16 +29,15 @@ export default function Main() {
         color="#C0362C"
       />
       <Grid
-        columns={"2fr 1fr"}
         sx={{
           height: "100vh",
-          backgroundImage: `linear-gradient(270deg, rgba(0, 0, 0, 0.5) 2.96%, #000000 82.63%), url(/assemble.jpg)`,
+          backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0.5) 2.96%, rgba(0, 0, 0,1) 100%), url(/assemble.jpg)`,
           backgroundSize: "cover",
         }}
       >
-        <Flex sx={{ height: "80vh", alignItems: "center" }}>
-          <Box py={4} px={5}>
-            <Box sx={{ textAlign: "center", width: "min-content" }}>
+        <Flex sx={{ height: "100vh", alignItems: "flex-end" }}>
+          <Grid columns={2} gap={5} py={5} px={5}>
+            <Box sx={{ textAlign: "center", width: "min-content", fontFamily: `"IBM Plex Mono"!important` }}>
               <Flex>
                 <Box
                   sx={{
@@ -110,14 +109,14 @@ export default function Main() {
                 />
               </Flex>
             </Box>
+            <Flex sx={{alignItems: 'center'}}>
             <Flex
               sx={{
                 flexDirection: "column",
                 gap: 3,
                 fontSize: 3,
-                textAlign: "left",
+                textAlign: "right",
                 textTransform: "uppercase",
-                mt: 4,
                 fontFamily: `"IBM Plex Mono"`
               }}
             >
@@ -127,13 +126,13 @@ export default function Main() {
                   fontWeight: 800,
                 }}
               >
-                {">"} December 30 2022 to January 1 2023
+                Dec. 30 2022 to Jan. 1 2023 
               </Box>
-              <Box sx={{ fontWeight: 800 }}> {">"} CyberCity, Delhi NCR</Box>
-              <Box>{">"} ₹1.25 Lakh in travel stipends</Box>
-              <Box> {">"} Doors open at 6PM; 42-hours long.</Box>
-            </Flex>
-          </Box>
+              <Box sx={{ fontWeight: 800 }}>CyberCity, Delhi NCR </Box>
+              <Box>₹1.25 Lakh in travel stipends  </Box>
+              <Box> Doors open at 6PM; 42-hours long </Box>
+            </Flex></Flex>
+          </Grid>
         </Flex>
       </Grid>
       <Hackathon />
