@@ -90,7 +90,7 @@ export default function Glossary() {
             hackathon, as well as swag, prizes, and fun mini-events.`}
             />
             <GlossaryItem
-              question="What can I make at the hackathon?"
+              question="What can I make at Epoch?"
               answer={
                 <>
                   Anything! Apps, art, sites, and hardware projects are all
