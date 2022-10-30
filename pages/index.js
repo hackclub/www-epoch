@@ -31,11 +31,12 @@ export default function Main() {
       <Grid
         sx={{
           height: "100vh",
-          backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0.5) 2.96%, rgba(0, 0, 0,1) 100%), url(/assemble.jpg)`,
+          backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.5) 2.96%, rgba(0, 0, 0,0.9) 100%), url(/assemble.jpg)`,
           backgroundSize: "cover",
+          backgroundPosition: 'bottom'
         }}
       >
-        <Flex sx={{ height: "100vh", alignItems: "flex-end" }}>
+        <Flex sx={{ height: "100vh", alignItems: "flex-start" }}>
           <Grid columns={2} gap={5} py={5} px={5}>
             <Box sx={{ textAlign: "center", width: "min-content", fontFamily: `"IBM Plex Mono"!important` }}>
               <Flex>
@@ -62,7 +63,7 @@ export default function Main() {
               <Box
                 sx={{
                   fontSize: 4,
-                  mb: 2,
+                  mb: 3,
                   px: 4,
                   zIndex: 999,
                   position: "relative",
@@ -122,7 +123,6 @@ export default function Main() {
             >
               <Box
                 sx={{
-                  mt: 2,
                   fontWeight: 800,
                 }}
               >
