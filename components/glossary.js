@@ -5,7 +5,7 @@ export default function Glossary() {
   return (
     <Box
       sx={{
-        background: theme.util.gx("cyan", "blue"),
+        background: theme.util.gx("purple", "rgb(157,58,249)"),
         color: "white",
         lineHeight: 1.5,
         textAlign: "left",

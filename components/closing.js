@@ -34,11 +34,11 @@ export default function Closing() {
           epoch@hackclub.com
         </Link>
         .
-        <br /> Source code open sourced at{" "}
+        <br /> Website open sourced at{" "}
         <Link href="https://github.com/hackclub/www-epoch" target="_blank" color="white">
           hackclub/www-epoch
         </Link>{" "}
-        and finances released on{" "}
+        and finances  on{" "}
         <Link href="https://bank.hackclub.com/epoch" target="_blank" color="white">
           Hack Club Bank
         </Link>

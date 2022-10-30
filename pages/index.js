@@ -8,7 +8,7 @@ import Expectations from "../components/expectations";
 import Register from "../components/register";
 import Glossary from "../components/glossary";
 import Closing from "../components/closing";
-import { Heading, Box, Text, Flex } from "theme-ui";
+import { Heading, Box, Text, Flex, Grid } from "theme-ui";
 
 import theme from "@hackclub/theme";
 import Sparkles from "../components/sparkles";
@@ -28,66 +28,113 @@ export default function Main() {
         image="https://cloud-gr64lwarr-hack-club-bot.vercel.app/0meta-assemble__1_.png"
         color="#C0362C"
       />
-      <Flex
+      <Grid
+        columns={"2fr 1fr"}
         sx={{
           height: "100vh",
-          flexDirection: "column",
-          justifyContent: "flex-end",
+          backgroundImage: `linear-gradient(270deg, rgba(0, 0, 0, 0.5) 2.96%, #000000 82.63%), url(/assemble.jpg)`,
+          backgroundSize: "cover",
         }}
       >
-        <img
-          src="/assemble.jpg"
-          style={{ objectPosition: "center 15vw", objectFit: "cover" }}
-        />
-        <Box backgroundColor="darker" py={4} px={4}>
-          <Heading as="h1" sx={{ fontSize: "12vw", lineHeight: "0.8" }}>
-            <Text
-              sx={{
-                position: "relative",
-                overflow: "hidden",
-                ...theme.util.gxText("dark", "darkless"),
-                WebkitTextStroke: "1px rgba(255,255,255,0.5)",
-              }}
-            >
-              {" "}
-              <Flex sx={{ width: "100%" }}>
-                <Text
+        <Flex sx={{ height: "80vh", alignItems: "center" }}>
+          <Box py={4} px={5}>
+            <Box sx={{ textAlign: "center", width: "min-content" }}>
+              <Flex>
+                <Box
                   sx={{
-                    position: "relative",
-                    overflow: "hidden",
-                    ...theme.util.gxText("dark", "darkless"),
-                    WebkitTextStroke: "1px rgba(255,255,255,0.5)",
+                    height: "18.42px",
+                    width: "23.61px",
+                    borderTop: "1px solid",
+                    borderLeft: "1px solid",
+                    borderColor: "rgba(175, 175, 175, 1)",
                   }}
-                >
-                  HACK CLUB
-                </Text>
-                <Box sx={{ textAlign: "center", flexGrow: 1 }}>
-                  <img
-                    src="/annotation.png"
-                    style={{ width: "100%", maxWidth: "230px", transform: `rotate(5deg) translateY(16px)` }}
-                  />
-                </Box>
+                />
+                <Box sx={{ flexGrow: 1 }} />
+                <Box
+                  sx={{
+                    height: "18.42px",
+                    width: "23.61px",
+                    borderTop: "1px solid",
+                    borderRight: "1px solid",
+                    borderColor: "rgba(175, 175, 175, 1)",
+                  }}
+                />
               </Flex>
-              PRESENTS
-            </Text>{" "}
-            <Sparkles>
-              <Text
+              <Box
                 sx={{
+                  fontSize: 4,
+                  mb: 2,
+                  px: 4,
+                  zIndex: 999,
                   position: "relative",
-                  overflow: "hidden",
-                  ...theme.util.gxText("blue", "cyan"),
-                  color: "blue",
-                  WebkitTextStroke: "2px rgba(255,255,255,0.5)",
-                  textShadow: "elevated",
                 }}
               >
-                EPOCH
-              </Text>
-            </Sparkles>
-          </Heading>
-          <Foreword />
-        </Box>
-      </Flex>
+                HACK CLUB PRESENTS
+              </Box>
+              <Heading
+                sx={{
+                  fontSize: "12vw",
+                  lineHeight: "0.8",
+                  fontWeight: 800,
+                  px: 4,
+                  mb: 2,
+                  color: "white",
+                  fontFamily: '"Fira Code"',
+                  textShadow: `0px 0px 21.4900016784668px rgba(255, 71, 148, 1),
+                          0px 0px 32.9800033569336px rgba(255, 71, 148, 0.9),
+                          0px 0px 105.42999267578125px rgba(255, 71, 148, 0.8),
+                          0px 0px 150.8599853515625px rgba(255, 71, 148, 0.7)`,
+                }}
+              >
+                EP0CH
+              </Heading>
+              <Flex>
+                <Box
+                  sx={{
+                    height: "18.42px",
+                    width: "23.61px",
+                    borderBottom: "1px solid",
+                    borderLeft: "1px solid",
+                    borderColor: "rgba(175, 175, 175, 1)",
+                  }}
+                />
+                <Box sx={{ flexGrow: 1 }} />
+                <Box
+                  sx={{
+                    height: "18.42px",
+                    width: "23.61px",
+                    borderBottom: "1px solid",
+                    borderRight: "1px solid",
+                    borderColor: "rgba(175, 175, 175, 1)",
+                  }}
+                />
+              </Flex>
+            </Box>
+            <Flex
+              sx={{
+                flexDirection: "column",
+                gap: 3,
+                fontSize: 3,
+                textAlign: "left",
+                textTransform: "uppercase",
+                mt: 4,
+              }}
+            >
+              <Box
+                sx={{
+                  mt: 2,
+                  fontWeight: 800,
+                }}
+              >
+                {">"} December 30 2022 to January 1 2023
+              </Box>
+              <Box sx={{ fontWeight: 800 }}> {">"} CyberCity, Delhi NCR</Box>
+              <Box>{">"} ₹1.25 Lakh in travel stipends</Box>
+              <Box> {">"} Doors open at 6PM; 42-hours long.</Box>
+            </Flex>
+          </Box>
+        </Flex>
+      </Grid>
       <Hackathon />
       <Layout>
         <Glossary />

@@ -41,7 +41,7 @@ export default function Hackathon() {
     <Grid columns={2}>
       <Box
         sx={{
-          color: "dark",
+          color: "white",
           lineHeight: 1.5,
           textAlign: "left",
           margin: "auto",
@@ -51,11 +51,48 @@ export default function Hackathon() {
           py: 3,
         }}
       >
-        <Heading sx={{ fontSize: [4, 5, 5], mb: 3 }}>
-          hackathon /ˈhakəθɒn/
+        <Heading
+          sx={{
+            fontSize: [4, 5, "84px"],
+            mb: "-10px",
+            WebkitTextStroke: "white",
+            WebkitTextStrokeWidth: "0.7px",
+            WebkitTextFillColor: "transparent",
+          }}
+        >
+          Hackathon?
+        </Heading>
+        <Heading
+          sx={{
+            fontSize: [4, 5, "84px"],
+            mb: 2,
+            textShadow: `0px 0px 40.4900016784668px rgba(255, 71, 148, 1),
+                          0px 0px 64.9800033569336px rgba(255, 71, 148, 0.9),
+                          0px 0px 210.42999267578125px rgba(255, 71, 148, 0.8),
+                          0px 0px 200.8599853515625px rgba(255, 71, 148, 0.7)`,
+                          position: 'relative',
+            zIndex: '500'
+          }}
+        >
+          Hackathon.
+        </Heading>
+        <Heading
+          sx={{
+            fontSize: [3, 4, 4],
+            mb: 3,
+            fontFamily: '"Fira Code"',
+            background: `linear-gradient(180deg, rgba(255, 71, 148, 0) 8.14%, #AFAFAF 30.78%)`,
+      
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            position: 'relative',
+            zIndex: '999'
+              }}
+        >
+          /ˈhakəθɒn/
         </Heading>
         <Box sx={{ fontSize: [2, 3, 3], width: "100%" }}>
-          <Tag content="noun" /> <Tag content="informal" /> a social coding
+          a social coding
           event where teens come together to build projects in a weekend and
           share them with the world.
           <Box sx={{ position: "relative", mt: 3 }}>
@@ -93,13 +130,19 @@ export default function Hackathon() {
       </Box>
       <Flex sx={{ flexDirection: "column", height: "100%" }}>
         {[
-          [AssembleTwo, theme.colors.red, "175 Hackers"],
-          [AssembleThree, theme.colors.blue, "42 Hours"],
+          [AssembleTwo, "#FF4794", "175 Hackers"],
+          [AssembleThree, "#D63AF9", "42 Hours"],
           [
             AssembleFour,
-            theme.colors.green,
-            <Text sx={{ display: "inline-flex", gap: 2, alignItems: 'center' }}>
-              <Text sx={{fontSize: '1.3em'}}>∞</Text> Creativity</Text>,
+            "#9d3af9",
+            <Text sx={{ display: "inline-flex", gap: 2, alignItems: "center" }}>
+              <Text
+                sx={{ fontSize: "1.3em", fontFamily: '"Phantom Sans 0.7"' }}
+              >
+                ∞
+              </Text>{" "}
+              Creativity
+            </Text>,
           ],
         ].map((x) => (
           <Box
@@ -138,10 +181,11 @@ export default function Hackathon() {
             >
               <Heading
                 sx={{
-                  fontSize: "7.5vw",
+                  fontSize: "6vw",
                   WebkitTextStroke: "white",
-                  WebkitTextStrokeWidth: ["2px", "3px"],
+                  WebkitTextStrokeWidth: ["1px", "2px"],
                   WebkitTextFillColor: "transparent",
+                  textTransform: "uppercase",
                 }}
               >
                 {x[2]}

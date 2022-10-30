@@ -1,5 +1,5 @@
 import * as React from 'react'
-import theme from '@hackclub/theme'
+import theme from '../lib/theme'
 import '../lib/global.css'
 import { ThemeProvider } from 'theme-ui'
 import '@hackclub/theme/fonts/reg-bold.css'
