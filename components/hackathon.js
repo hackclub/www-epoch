@@ -38,7 +38,7 @@ const Tag = ({ content }) => {
 
 export default function Hackathon() {
   return (
-    <Grid columns={2}>
+    <Grid columns={[1,2]}>
       <Box
         sx={{
           color: "white",
@@ -53,8 +53,8 @@ export default function Hackathon() {
       >
         <Heading
           sx={{
-            fontSize: [4, 5, "84px"],
-            mb: "-10px",
+            fontSize: ["13vw", 5, "84px"],
+            mb: [0,"-10px"],
             WebkitTextStroke: "white",
             WebkitTextStrokeWidth: "0.7px",
             WebkitTextFillColor: "transparent",
@@ -64,7 +64,7 @@ export default function Hackathon() {
         </Heading>
         <Heading
           sx={{
-            fontSize: [4, 5, "84px"],
+            fontSize: ["13vw", 5, "84px"],
             mb: 2,
             textShadow: `0px 0px 40.4900016784668px rgba(255, 71, 148, 1),
                           0px 0px 64.9800033569336px rgba(255, 71, 148, 0.9),
@@ -78,14 +78,14 @@ export default function Hackathon() {
         </Heading>
         <Box sx={{ fontSize: [2, 3, 3], width: "100%", mt: 3 }}>
           Epoch is a social coding
-          event where teens come together to build creative projects in a weekend and
-          share them with the world.
+          event where teens come together for a weekend to discover the joy of code, build creative projects and
+          share their projects with the world.
           <Box sx={{ position: "relative", mt: 3 }}>
             <Text
               sx={{
                 background: "white",
                 color: "black",
-                display: "flex",
+                display: ["none","flex"],
                 alignItems: "center",
                 py: 1,
                 px: 2,
@@ -113,7 +113,7 @@ export default function Hackathon() {
           </Box>
         </Box>
       </Box>
-      <Flex sx={{ flexDirection: "column", height: "100%" }}>
+      <Flex sx={{ flexDirection: "column", height: ["80vh","100%"] }}>
         {[
           [AssembleTwo, "#FF4794", "175 Hackers"],
           [AssembleThree, "#D63AF9", "42 Hours"],
@@ -122,7 +122,7 @@ export default function Hackathon() {
             "#9d3af9",
             <Text sx={{ display: "inline-flex", gap: 2, alignItems: "center" }}>
               <Text
-                sx={{ fontSize: "1.3em", fontFamily: '"Phantom Sans 0.7"' }}
+                sx={{ fontSize: "1.3em", fontFamily: '"Phantom Sans"' }}
               >
                 ∞
               </Text>{" "}
@@ -166,10 +166,10 @@ export default function Hackathon() {
             >
               <Heading
                 sx={{
-                  fontSize: "6vw",
+                  fontSize: ["12vw","6vw"],
                   WebkitTextStroke: "white",
-                  WebkitTextStrokeWidth: ["1px", "2px"],
-                  WebkitTextFillColor: "transparent",
+                  WebkitTextStrokeWidth: ["0px", "2px"],
+                  WebkitTextFillColor: ["white","transparent"],
                   textTransform: "uppercase",
                 }}
               >

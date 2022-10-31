@@ -112,22 +112,20 @@ export default function Forward() {
             Udyog Vihar, Sector 20,
             <br />
             Gurugram, Haryana 122022, India
-            <Grid columns={2} mt={2}>
+            <Grid columns={2} mt={3}>
               <Image
-                sx={{ borderRadius: 2, objectFit: "cover" }}
+                sx={{ borderRadius: 4, objectFit: "cover", height: "200px" }}
                 src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Cyber_City_Skyline.jpeg"
-                height="200px"
               />
               <Image
-                sx={{ borderRadius: 2, objectFit: "cover", height: "100%" }}
+                sx={{ borderRadius: 4, objectFit: "cover", height: "200px" }}
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Cyber_City_View.jpg/2560px-Cyber_City_View.jpg"
-                height="200px"
               />
             </Grid>
           </Box>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14024.938975122483!2d77.0909444!3d28.5025843!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xae4dc02e39c2931f!2sMasters&#39;%20Union%20School%20of%20Business!5e0!3m2!1sen!2ssg!4v1666690637009!5m2!1sen!2ssg"
-            style={{ border: 0, width: "100%", height: "100%" }}
+            style={{ borderRadius: 4, border: 0, width: "100%", height: "100%" }}
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"

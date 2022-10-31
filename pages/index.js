@@ -9,6 +9,7 @@ import Register from "../components/register";
 import Glossary from "../components/glossary";
 import Closing from "../components/closing";
 import { Heading, Box, Text, Flex, Grid } from "theme-ui";
+import ScrollHint from "../components/scroll-hint";
 
 import theme from "@hackclub/theme";
 import Sparkles from "../components/sparkles";
@@ -33,12 +34,26 @@ export default function Main() {
           height: "100vh",
           backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.5) 2.96%, rgba(0, 0, 0,0.9) 100%), url(/assemble.jpg)`,
           backgroundSize: "cover",
-          backgroundPosition: 'bottom'
+          backgroundPosition: "bottom",
         }}
       >
         <Flex sx={{ height: "100vh", alignItems: "flex-start" }}>
-          <Grid columns={2} gap={5} py={5} px={5}>
-            <Box sx={{ textAlign: "center", width: "min-content", fontFamily: `"IBM Plex Mono"!important` }}>
+          <Grid
+            columns={[1, 2]}
+            gap={5}
+            py={[3, 5]}
+            px={[3, 5]}
+            sx={{ width: "100%" }}
+          >
+            <Box
+              sx={{
+                textAlign: "center",
+                width: ["100%", "min-content"],
+                mt: [4, 0],
+                fontFamily: `"IBM Plex Mono"!important`,
+                mb: [-3, 0],
+              }}
+            >
               <Flex>
                 <Box
                   sx={{
@@ -62,7 +77,7 @@ export default function Main() {
               </Flex>
               <Box
                 sx={{
-                  fontSize: 4,
+                  fontSize: [2, 4],
                   mb: 3,
                   px: 4,
                   zIndex: 999,
@@ -73,10 +88,10 @@ export default function Main() {
               </Box>
               <Heading
                 sx={{
-                  fontSize: "12vw",
+                  fontSize: ["24vw", "12vw"],
                   lineHeight: "0.8",
                   fontWeight: 800,
-                  px: 4,
+                  px: [3, 4],
                   mb: 2,
                   color: "white",
                   fontFamily: '"Fira Code"',
@@ -110,28 +125,38 @@ export default function Main() {
                 />
               </Flex>
             </Box>
-            <Flex sx={{alignItems: 'center'}}>
             <Flex
               sx={{
-                flexDirection: "column",
-                gap: 3,
-                fontSize: 3,
-                textAlign: "right",
-                textTransform: "uppercase",
-                fontFamily: `"IBM Plex Mono"`
+                alignItems: "center",
+                justifyContent: ["center", `flex-end`],
               }}
             >
-              <Box
+              <Flex
                 sx={{
-                  fontWeight: 800,
+                  flexDirection: "column",
+                  gap: 3,
+                  fontSize: ["6vw", 3],
+                  textAlign: ["center", "right"],
+                  textTransform: "uppercase",
+                  fontFamily: `"IBM Plex Mono"`,
+                  maxWidth: "75vw",
                 }}
               >
-                Dec. 30 2022 to Jan. 1 2023 
-              </Box>
-              <Box sx={{ fontWeight: 800 }}>CyberCity, Delhi NCR </Box>
-              <Box>₹1.25 Lakh in travel stipends  </Box>
-              <Box> Doors open at 6PM; 42-hours long </Box>
-            </Flex></Flex>
+                <Box
+                  sx={{
+                    fontWeight: 800,
+                    maxWidth: ["60vw", "100vw"],
+                    margin: ["auto", 0]
+                  }}
+                >
+                  Dec. 30 2022 to Jan. 1 2023
+                </Box>
+                <Box sx={{ fontWeight: 800 }}>CyberCity, Delhi NCR </Box>
+                <Box>₹1.25 Lakh in travel stipends </Box>
+                <Box> Doors open at 6PM; 42-hours long </Box>
+              </Flex>
+            </Flex>
+            <ScrollHint />
           </Grid>
         </Flex>
       </Grid>

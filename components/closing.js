@@ -3,15 +3,17 @@ import { Box, Container, Image, Link } from "theme-ui";
 export default function Closing() {
   return (
     <Container variant="copy" mt={5}>
-      <Box sx={{ fontSize: 3, textAlign: "center", fontWeight: 500, mb: 2 }}>
+      <Box sx={{ fontSize: 3, textAlign: "center", fontWeight: 500, mb: 3 }}>
         We look forward to meeting you at Epoch,
       </Box>
+      <Box sx={{textAlign: 'center'}}>
       {signatures.map(username => (
         <Signature
           src={`/signatures/${username}.png`}
           href={`https://github.com/${username}`}
+          key={username}
         />
-      ))}
+      ))}</Box>
       <Box
         sx={{
           textAlign: "center",
