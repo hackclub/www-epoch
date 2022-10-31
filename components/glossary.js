@@ -136,6 +136,21 @@ export default function Glossary() {
                 </>
               }
             />
+            <GlossaryItem
+              question="I have more questions."
+              answer={
+                <>
+                  Contact us! Reach out on #epoch on Slack or email us at {" "}
+                  <a
+                    style={{ color: "white" }}
+                    href="mailto:epoch@hackclub.com"
+                  >
+                    epoch@hackclub.com
+                  </a>{" "}
+                  We're always ready to answer all your questions!
+                </>
+              }
+            />
           </Grid>
         </Grid>
       </Grid>
