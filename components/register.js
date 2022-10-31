@@ -17,7 +17,7 @@ export default function Register() {
           textShadow: "elevated",
         }}
       >
-        50+ Hack Clubbers have came together to organise this event; <b>join us on an
+        50+ Hack Clubbers have come together to organise this event; <b>join us on an
         adventure like none other.</b>
       </Box>
       <Card
