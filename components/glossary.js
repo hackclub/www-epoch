@@ -140,7 +140,7 @@ export default function Glossary() {
               question="I have more questions, how can I reach out?"
               answer={
                 <>
-                  Contact us! Reach out on #epoch on Slack or email us at {" "}
+                  Contact us! Reach out on #epoch on the Hack Club Slack or email us at {" "}
                   <a
                     style={{ color: "white" }}
                     href="mailto:epoch@hackclub.com"
