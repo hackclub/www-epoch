@@ -262,6 +262,7 @@ function GlossaryItem({ question, answer }) {
         borderRadius: 4,
         border: "0.7px solid",
         borderColor: "slate",
+        fontSize: ["18px",2]
       }}
     >
       <Box as="details">
