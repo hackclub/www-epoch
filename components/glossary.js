@@ -175,6 +175,23 @@ export default function Glossary() {
                 </>
               }
             />
+            <GlossaryItem
+              question="My parents are worried! What should I do?"
+              answer={
+                <>
+                  We're here to help, ask them to reach out to us at{" "}
+                  <a
+                    style={{ color: "black" }}
+                    href="mailto:epoch@hackclub.com"
+                  >
+                    epoch@hackclub.com
+                  </a>{" "}
+                  and we'll make sure to answer all their questions. Epoch will
+                  be supervised by background checked staff and overseen by 24/7
+                  security staff.
+                </>
+              }
+            />
           </Grid>
           <Grid sx={{ height: "fit-content" }}>
             <GlossaryItem
@@ -212,23 +229,7 @@ export default function Glossary() {
                 </>
               }
             />
-            <GlossaryItem
-              question="My parents are worried! What should I do?"
-              answer={
-                <>
-                  We're here to help, ask them to reach out to us at{" "}
-                  <a
-                    style={{ color: "black" }}
-                    href="mailto:epoch@hackclub.com"
-                  >
-                    epoch@hackclub.com
-                  </a>{" "}
-                  and we'll make sure to answer all their questions. Epoch will
-                  be supervised by background checked staff and overseen by 24/7
-                  security staff.
-                </>
-              }
-            />
+            
             <GlossaryItem
               question="I have more questions, how can I reach out?"
               answer={
