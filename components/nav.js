@@ -63,7 +63,7 @@ export const Nav = () => {
           />
         </Link>
       </Heading>
-      <Heading sx={{flexGrow: 1,textAlign: 'center', color: 'slate', textTransform: 'uppercase', display: ['none', 'block']}}>
+      <Heading sx={{flexGrow: 1,textAlign: 'center', color: 'muted', textTransform: 'uppercase', display: ['none', 'block']}}>
         Epoch, Dec. 30th to Jan. 1st
       </Heading>
       <Box
