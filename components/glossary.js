@@ -152,21 +152,6 @@ export default function Glossary() {
               }
             />
             <GlossaryItem
-              question={`I don't live nearby, what should I do?`}
-              answer={
-                <>
-                  We're providing travel stipends to both domestic and
-                  international attendees. Please request one on the
-                  registration form if needed. If you're traveling
-                  internationally, we have prepared this{" "}
-                  <a style={{ color: "black" }} href="">
-                    guide
-                  </a>{" "}
-                  to help you.
-                </>
-              }
-            />
-            <GlossaryItem
               question={`What do I need to bring to Epoch?`}
               answer={`Your laptop, chargers, anything for your hack (hardware?),
           toiletries, sleeping bags, and an open mind.`}
@@ -192,6 +177,11 @@ export default function Glossary() {
             />
           </Grid>
           <Grid sx={{ height: "fit-content" }}>
+            <GlossaryItem
+              question={`Does participating cost anything?`}
+              answer={`Nothing! We’ll have meals, snacks, and beverages onsite at the
+            hackathon, as well as swag, prizes, and fun mini-events.`}
+            />
             <GlossaryItem
               question="What can I make at Epoch?"
               answer={
