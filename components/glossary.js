@@ -46,7 +46,7 @@ export default function Glossary() {
               Phase II, Udyog Vihar, Sector 20,
               <br />
               Gurugram, Delhi NCR
-              <Grid columns={2} mt={2} sx={{ width: "80%", display: ['none!important', 'grid'] }}>
+              <Grid columns={2} mt={2} sx={{ width: "80%", display: ['none!important', 'grid!important'] }}>
                 <Image
                   sx={{ borderRadius: 2, objectFit: "cover" }}
                   src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Cyber_City_Skyline.jpeg"
@@ -59,12 +59,12 @@ export default function Glossary() {
                 />
               </Grid>
             </Box>
-            <Box sx={{height: ["min-content", "auto"]}}>
+            <Box sx={{height: ["min-content", "100%"]}}>
               <Box as="iframe"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3731.958571415423!2d77.08833522748132!3d28.501816482248387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1948a901da95%3A0x4a34e5bb6daab881!2sDLF%20CYBER%20PARK!5e0!3m2!1sen!2ssg!4v1667220038598!5m2!1sen!2ssg"
                 height={["90%", "100%"]}
                 width="100%"
-                style={{ border: "0", minHeight: ["100px","300px"] }}
+                sx={{ border: "0", minHeight: ["100px","300px"] }}
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
