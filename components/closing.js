@@ -18,7 +18,8 @@ export default function Closing() {
           textAlign: "center",
           lineHeight: "1.5",
           mt: 4,
-          opacity: "0.8",
+          opacity: "0.6",
+          textShadow: 'elevated',
           transition: "linear 0.3s",
           "&:hover": {
             opacity: 1,
@@ -26,29 +27,29 @@ export default function Closing() {
         }}
       >
         An event crafted by the{" "}
-        <Link href="https://hackclub.com" target="_blank">
+        <Link href="https://hackclub.com" target="_blank" color="white">
           Hack Club
         </Link>{" "}
         community, email us at{" "}
-        <Link href="mailto:epoch@hackclub.com" target="_blank">
+        <Link href="mailto:epoch@hackclub.com" target="_blank" color="white">
           epoch@hackclub.com
         </Link>
         .
-        <br /> Source code open sourced at{" "}
-        <Link href="https://github.com/hackclub/www-epoch" target="_blank">
+        <br /> Website open sourced at{" "}
+        <Link href="https://github.com/hackclub/www-epoch" target="_blank" color="white">
           hackclub/www-epoch
         </Link>{" "}
-        and finances released on{" "}
-        <Link href="https://bank.hackclub.com/epoch" target="_blank">
+        and finances  on{" "}
+        <Link href="https://bank.hackclub.com/epoch" target="_blank" color="white">
           Hack Club Bank
         </Link>
-        .
+        .<br />
         <Image
-          src="https://assets.hackclub.com/flag-standalone-bw.png"
+          src="https://cloud-d6s84nk79-hack-club-bot.vercel.app/0flag-standalone-bw_1.png"
           sx={{
             width: "100px",
             mt: 4,
-            filter: "invert(1)",
+           
             textAlign: "center",
           }}
         />

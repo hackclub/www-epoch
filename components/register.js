@@ -1,29 +1,31 @@
 import { Box, Card, Grid, Heading, Input, Button } from "theme-ui";
-import { useState } from 'react'
+import { useState } from "react";
+import theme from "@hackclub/theme";
 
 export default function Register() {
-  const [name, setName] = useState("")
-  const [email, setEmail] = useState("")
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
   return (
     <>
       <Box
         sx={{
           margin: "auto",
           width: ["auto", "800px", "800px"],
-          mt: 4,
+          mt: 5,
           fontSize: [3, 4, 4],
+          textAlign: "center",
+          textShadow: "elevated",
         }}
       >
-        Teenagers interested in technology: there's no better place to be this
-        New Year's than at Epoch. Register today to join us for an adventure like
-        none other.
+        50+ Hack Clubbers have come together to organise this event; <b>join us on an
+        adventure like none other.</b>
       </Box>
       <Card
         sx={{
-          background: "dark",
+          background: theme.util.gx("black", "darker"),
           color: "white",
           lineHeight: 1.5,
-          border: "3px dashed",
+          border: "2px solid",
           borderColor: "white",
           textAlign: "left",
           margin: "auto",
@@ -34,43 +36,47 @@ export default function Register() {
       >
         <Box sx={{ fontSize: [2, 3, 3], width: "100%" }}>
           <Grid>
-            <Heading
-              sx={{ color: "white", fontSize: [3, 4, 4], textAlign: "left" }}
-            >
-              Register for Epoch
-            </Heading>
-            <Box sx={{ textAlign: "left" }}>
-              Epoch is open to anyone anywhere 18 or younger. Participation,
+            <Box sx={{ textAlign: "center" }}>
+              Epoch is open to anyone anywhere, 18 or younger. Participation,
               including meals, costs nothing and travel stipends are available.
             </Box>
             <Input
-              placeholder="Name"
+              placeholder="Your Name"
               sx={{
                 color: "white",
                 border: "1px solid",
                 borderColor: "slate",
+                textAlign: "center",
+                color: "text",
               }}
-              onChange={e => setName(e.target.value)}
+              onChange={(e) => setName(e.target.value)}
             />
             <Input
-              placeholder="Email"
+              placeholder="Your Email"
               sx={{
                 color: "white",
                 border: "1px solid",
                 borderColor: "slate",
+                textAlign: "center",
+                color: "text",
               }}
-              onChange={e => setEmail(e.target.value)}
+              onChange={(e) => setEmail(e.target.value)}
             />
-            <Button 
-              as="a" 
+            <Button
+              as="a"
               sx={{
-                  fontSize: [1, 2, 2],
-                  filter: !(name != "" && email != "") ? `grayscale(1)` : `grayscale(0)`,
-                  pointerEvents: !(name != "" && email != "") ? `none` : `default`
+                borderRadius: "4px",
+                fontSize: [1, 2, 2],
+                pointerEvents: !(name != "" && email != "")
+                  ? `none`
+                  : `default`,
+                opacity: !(name != "" && email != "") ? 0.7 : 1,
+                background: theme.util.gx("orange", "red"),
               }}
               href={`https://register.epoch.hackclub.dev?email=${email}&name=${name}`}
             >
-              Finish {11 - (name != "" ? 1 : 0) - (email != "" ? 1 : 0)} more fields to register.
+              Finish {11 - (name != "" ? 1 : 0) - (email != "" ? 1 : 0)} more
+              fields to register.
             </Button>
           </Grid>
         </Box>
