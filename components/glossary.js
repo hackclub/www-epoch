@@ -236,7 +236,7 @@ export default function Glossary() {
                 <>
                   Contact us! Reach out on #epoch on the Hack Club Slack or email us at {" "}
                   <a
-                    style={{ color: "white" }}
+                    style={{ color: "black" }}
                     href="mailto:epoch@hackclub.com"
                   >
                     epoch@hackclub.com
