@@ -37,7 +37,7 @@ export default function Main() {
           backgroundPosition: "bottom",
         }}
       >
-        <Flex sx={{ height: "100vh", alignItems: "flex-start" }}>
+        <Flex sx={{ height: "100%", flexDirection: 'column' }}>
           <Grid
             columns={[1, 2]}
             gap={5}
@@ -156,9 +156,12 @@ export default function Main() {
                 <Box> Doors open at 6PM; 42-hours long </Box>
               </Flex>
             </Flex>
-            <ScrollHint />
+            <ScrollHint mobile />
           </Grid>
+          <Flex sx={{flexGrow: 1, alignItems: 'flex-end', mb: 5}}>
+          <ScrollHint mobile={false} /></Flex>
         </Flex>
+        
       </Grid>
       <Hackathon />
       <Layout>

@@ -13,10 +13,10 @@ const handleClick = async () => {
     }
   })
 }
-const ScrollHint = () => (
+const ScrollHint = ({mobile}) => (
   <Box
     sx={{
-      display: ['block', 'none'],
+      display: [mobile ? 'block' : 'none', !mobile ? 'block' : 'none'],
       position: 'relative',
       height: '32px',
       width: '32px',
