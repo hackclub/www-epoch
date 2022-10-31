@@ -137,7 +137,7 @@ export default function Glossary() {
               }
             />
             <GlossaryItem
-              question="I have more questions."
+              question="I have more questions, how can I reach out?"
               answer={
                 <>
                   Contact us! Reach out on #epoch on Slack or email us at {" "}
