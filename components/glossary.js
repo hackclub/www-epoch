@@ -10,11 +10,12 @@ export default function Glossary() {
         lineHeight: 1.5,
         textAlign: "left",
         textAlign: "center",
-        p: 4,
+        px: 4,
+        py: 5
       }}
     >
       <Grid sx={{ width: "100%", textAlign: "left" }}>
-        <Heading sx={{ color: "black", fontSize: [3, 5, 5], textAlign: 'center' }}>
+        <Heading sx={{ color: "black", fontSize: [3, 5, 5], textDecoration: 'underline', fontFamily: `"Phantom Sans 0.7"`, mb: 2 }}>
           Everything You Kneed To Know
         </Heading>
         <Grid columns={2}>
@@ -151,7 +152,7 @@ function GlossaryItem({ question, answer }) {
         py: 2,
         px: 3,
         borderRadius: 4,
-        border: '1px solid',
+        border: '0.7px solid',
         borderColor: 'slate'
       }}
     >
