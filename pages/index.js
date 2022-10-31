@@ -13,6 +13,7 @@ import ScrollHint from "../components/scroll-hint";
 
 import theme from "@hackclub/theme";
 import Sparkles from "../components/sparkles";
+import { Nav } from "../components/nav";
 
 export default function Main() {
   return (
@@ -20,7 +21,7 @@ export default function Main() {
       <Head>
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
       </Head>
-
+      <Nav />
       <Meta
         as={Head}
         name="Epoch ~ Delhi NCR, 30th December 2022"

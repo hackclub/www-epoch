@@ -138,7 +138,7 @@ export default function Hackathon() {
           >
             <Box
               sx={{
-                zIndex: 999,
+                zIndex: 990,
                 position: "absolute",
                 width: "100%",
                 height: "100%",

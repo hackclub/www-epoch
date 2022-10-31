@@ -48,12 +48,12 @@ export default function Glossary() {
               Gurugram, Delhi NCR
               <Grid columns={2} mt={2} sx={{ width: "80%", display: ['none!important', 'grid!important'] }}>
                 <Image
-                  sx={{ borderRadius: 2, objectFit: "cover" }}
+                  sx={{ borderRadius: 2, objectFit: "cover", height: '140px'  }}
                   src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Cyber_City_Skyline.jpeg"
                   height="200px"
                 />
                 <Image
-                  sx={{ borderRadius: 2, objectFit: "cover", height: "100%" }}
+                  sx={{ borderRadius: 2, objectFit: "cover", height: '140px' }}
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Cyber_City_View.jpg/2560px-Cyber_City_View.jpg"
                   height="200px"
                 />
