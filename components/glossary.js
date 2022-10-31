@@ -5,7 +5,7 @@ export default function Glossary() {
   return (
     <Box
       sx={{
-        background: "white",
+        background: "#eee",
         color: "black",
         lineHeight: 1.5,
         textAlign: "left",
@@ -15,8 +15,8 @@ export default function Glossary() {
       }}
     >
       <Grid sx={{ width: "100%", textAlign: "left" }}>
-        <Heading sx={{ color: "black", fontSize: [3, 5, 5], textDecoration: 'underline', fontFamily: `"Phantom Sans 0.7"`, mb: 2 }}>
-          Everything You Kneed To Know
+        <Heading sx={{ textAlign: "center", color: "black", fontSize: [3, 5, 5], fontFamily: `"Georgia"`, mb: 2 }}>
+          Everything You Need To Know
         </Heading>
         <Grid columns={2}>
           <Grid sx={{height: 'fit-content'}}>
@@ -162,7 +162,7 @@ function GlossaryItem({ question, answer }) {
   return (
     <Box
       sx={{
-        bg: "white",
+        bg: "#ececec",
         color: "slate",
         py: 2,
         px: 3,
@@ -189,3 +189,4 @@ function GlossaryItem({ question, answer }) {
     </Box>
   );
 }
+
