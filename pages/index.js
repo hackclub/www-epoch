@@ -37,7 +37,7 @@ export default function Main() {
         }}
       >
         <Flex sx={{ height: "100vh", alignItems: "flex-start" }}>
-          <Grid columns={2} gap={5} py={5} px={5}>
+          <Grid columns={2} gap={5} py={5} px={5} sx={{width: '100%'}}>
             <Box sx={{ textAlign: "center", width: "min-content", fontFamily: `"IBM Plex Mono"!important` }}>
               <Flex>
                 <Box
@@ -110,7 +110,7 @@ export default function Main() {
                 />
               </Flex>
             </Box>
-            <Flex sx={{alignItems: 'center'}}>
+            <Flex sx={{alignItems: 'center', justifyContent: `flex-end`}}>
             <Flex
               sx={{
                 flexDirection: "column",

@@ -15,7 +15,7 @@ export default function Glossary() {
       }}
     >
       <Grid sx={{ width: "100%", textAlign: "left" }}>
-        <Heading sx={{ color: "black", fontSize: [3, 5, 5], textDecoration: 'underline', fontFamily: `"Phantom Sans 0.7"`, mb: 2 }}>
+        <Heading sx={{ color: "black", fontSize: [3, 5, 5], textDecoration: 'underline', fontFamily: `"Phantom Sans 0.7"`, mb: 3 }}>
           Everything You Kneed To Know
         </Heading>
         <Grid columns={2}>
