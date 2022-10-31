@@ -47,7 +47,7 @@ export const Nav = () => {
         p={2}
         target="_blank"
         sx={{
-          
+          flexGrow: [1, 0],
           display: "flex",
           alignItems: "center",
           gap: 2,
