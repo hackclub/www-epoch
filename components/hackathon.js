@@ -53,7 +53,7 @@ export default function Hackathon() {
       >
         <Heading
           sx={{
-            fontSize: ["40px", 5, "84px"],
+            fontSize: ["13vw", 5, "84px"],
             mb: [0,"-10px"],
             WebkitTextStroke: "white",
             WebkitTextStrokeWidth: "0.7px",
@@ -64,7 +64,7 @@ export default function Hackathon() {
         </Heading>
         <Heading
           sx={{
-            fontSize: ["40px", 5, "84px"],
+            fontSize: ["13vw", 5, "84px"],
             mb: 2,
             textShadow: `0px 0px 40.4900016784668px rgba(255, 71, 148, 1),
                           0px 0px 64.9800033569336px rgba(255, 71, 148, 0.9),
