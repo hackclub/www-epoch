@@ -10,35 +10,35 @@ export default function Glossary() {
         lineHeight: 1.5,
         textAlign: "left",
         textAlign: "center",
-        px: 4,
-        py: 5,
+        px: [3, 4],
+        py: [4, 5],
       }}
     >
       <Grid sx={{ width: "100%", textAlign: "left" }}>
         <Heading
           sx={{
             color: "black",
-            fontSize: [3, 5, 6],
+            fontSize: ["12vw", 5, 6],
             textDecoration: "underline",
-            fontFamily: `"Phantom Sans 0.7"`,
-            mb: 3,
+            fontFamily: `"Phantom Sans"`,
+            mb: [1, 3],
             textAlign: 'center'
           }}
         >
-          Everything You Kneed To Know
+          Everything You Need To Know
         </Heading>
         <Grid>
           <Grid
             sx={{
               bg: "white",
               color: "slate",
-              p: 4,
+              p: [3,4],
               borderRadius: 4,
               border: "0.7px solid",
               borderColor: "slate",
-              fontSize: 2,
+              fontSize: ["18px",2],
             }}
-            columns={2}
+            columns={[1,2]}
           >
             <Box>
               <b>Venue:</b> Masters' Union <br />
@@ -46,7 +46,7 @@ export default function Glossary() {
               Phase II, Udyog Vihar, Sector 20,
               <br />
               Gurugram, Delhi NCR
-              <Grid columns={2} mt={2} sx={{ width: "80%" }}>
+              <Grid columns={2} mt={2} sx={{ width: "80%", display: ['none!important', 'grid'] }}>
                 <Image
                   sx={{ borderRadius: 2, objectFit: "cover" }}
                   src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Cyber_City_Skyline.jpeg"
@@ -59,28 +59,28 @@ export default function Glossary() {
                 />
               </Grid>
             </Box>
-            <Box>
-              <iframe
+            <Box sx={{height: ["min-content", "auto"]}}>
+              <Box as="iframe"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3731.958571415423!2d77.08833522748132!3d28.501816482248387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1948a901da95%3A0x4a34e5bb6daab881!2sDLF%20CYBER%20PARK!5e0!3m2!1sen!2ssg!4v1667220038598!5m2!1sen!2ssg"
-                height="100%"
+                height={["90%", "100%"]}
                 width="100%"
-                style={{ border: "0", minHeight: "300px" }}
+                style={{ border: "0", minHeight: ["100px","300px"] }}
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
+              ></Box>
             </Box>
           </Grid>
-          <Grid columns={2}>
+          <Grid columns={[1,2]}>
           <Box
             sx={{
               bg: "white",
               color: "slate",
-              p: 4,
+              p: [3,4],
               borderRadius: 4,
               border: "0.7px solid",
               borderColor: "slate",
-              fontSize: 2,
+              fontSize: ["18px",2],
             }}
             columns="1fr 1fr"
           >
@@ -101,11 +101,11 @@ export default function Glossary() {
             sx={{
               bg: "white",
               color: "slate",
-              p: 4,
+              p: [3,4],
               borderRadius: 4,
               border: "0.7px solid",
               borderColor: "slate",
-              fontSize: 2,
+              fontSize: ["18px",2],
             }}
             columns="1fr 1fr"
           >
@@ -132,7 +132,7 @@ export default function Glossary() {
             </Box>
           </Box></Grid>
         </Grid>
-        <Grid columns={2}>
+        <Grid columns={[1, 2]}>
           <Grid sx={{ height: "fit-content" }}>
             <GlossaryItem
               question={`Am I eligible to participate in Epoch?`}
@@ -266,13 +266,14 @@ function GlossaryItem({ question, answer }) {
     >
       <Box as="details">
         <Box as="summary">
-          <Text color="black" sx={{ fontSize: 2, pl: 1 }}>
+          <Text color="black" sx={{ fontSize: ["18px", 2], pl: 1 }}>
             {question}
           </Text>
         </Box>
         <Box
           sx={{
             mt: 2,
+            mb:[2,0],
             color: "black",
           }}
         >

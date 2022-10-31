@@ -37,8 +37,8 @@ export default function Main() {
         }}
       >
         <Flex sx={{ height: "100vh", alignItems: "flex-start" }}>
-          <Grid columns={2} gap={5} py={5} px={5} sx={{width: '100%'}}>
-            <Box sx={{ textAlign: "center", width: "min-content", fontFamily: `"IBM Plex Mono"!important` }}>
+          <Grid columns={[1,2]} gap={5} py={[3,5]} px={[3,5]} sx={{width: '100%'}}>
+            <Box sx={{ textAlign: "center", width: ["100%","min-content"], mt:[4,0], fontFamily: `"IBM Plex Mono"!important`, mb: [-3,0] }}>
               <Flex>
                 <Box
                   sx={{
@@ -62,7 +62,7 @@ export default function Main() {
               </Flex>
               <Box
                 sx={{
-                  fontSize: 4,
+                  fontSize: [2,4],
                   mb: 3,
                   px: 4,
                   zIndex: 999,
@@ -73,10 +73,10 @@ export default function Main() {
               </Box>
               <Heading
                 sx={{
-                  fontSize: "12vw",
+                  fontSize: ["24vw", "12vw"],
                   lineHeight: "0.8",
                   fontWeight: 800,
-                  px: 4,
+                  px: [3, 4],
                   mb: 2,
                   color: "white",
                   fontFamily: '"Fira Code"',
@@ -110,20 +110,23 @@ export default function Main() {
                 />
               </Flex>
             </Box>
-            <Flex sx={{alignItems: 'center', justifyContent: `flex-end`}}>
+            <Flex sx={{alignItems: 'center', justifyContent: ['center',`flex-end`]}}>
             <Flex
               sx={{
                 flexDirection: "column",
                 gap: 3,
-                fontSize: 3,
-                textAlign: "right",
+                fontSize: ["6vw",3],
+                textAlign: ["center","right"],
                 textTransform: "uppercase",
-                fontFamily: `"IBM Plex Mono"`
+                fontFamily: `"IBM Plex Mono"`,
+                maxWidth: '75vw'
               }}
             >
               <Box
                 sx={{
                   fontWeight: 800,
+                  maxWidth: ["60vw", "100vw"],
+                  margin: 'auto'
                 }}
               >
                 Dec. 30 2022 to Jan. 1 2023 

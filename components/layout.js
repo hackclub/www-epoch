@@ -13,7 +13,7 @@ export default function Layout({ children }) {
         backgroundPosition: "center",
         backgroundAttachment: "fixed",
         textAlign: "left",
-        px: [3, 0, 0],
+        px: [0, 0, 0],
       }}
     >
       {children}

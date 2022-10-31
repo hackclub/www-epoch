@@ -10,7 +10,7 @@ export default function Register() {
       <Box
         sx={{
           margin: "auto",
-          width: ["auto", "800px", "800px"],
+          width: ["90%", "800px", "800px"],
           mt: 5,
           fontSize: [3, 4, 4],
           textAlign: "center",
@@ -29,7 +29,7 @@ export default function Register() {
           borderColor: "white",
           textAlign: "left",
           margin: "auto",
-          maxWidth: "800px",
+          maxWidth: ["90%","800px"],
           mt: 4,
           textAlign: "center",
         }}
