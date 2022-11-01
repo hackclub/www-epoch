@@ -117,11 +117,16 @@ export default function Glossary() {
                 have fun.
               </Box>
               <Box>
-                Epoch has been organised by the community in public on the{" "}
-                <Link href="https://hackclub.com/slack" target="_blank">
+                Epoch is fully open source, funded by, and  run by the Hack Club community. 
+                Hack Clubbers are organising Epoch in public on the 
+                  <Link href="https://hackclub.com/slack" target="_blank">
                   Hack Club Slack
-                </Link>
-                . Everything from this website to Epoch's dinner menu, was
+                </Link> 
+                and with fully transparent finances using 
+                <Link href="https://bank.hackclub.com/epoch" target="_blank">
+                  Hack Club Bank
+                </Link>. 
+                Everything from this website to Epoch's dinner menu, was
                 created by teenagers just like yourself and you're welcome to
                 help out in <i>#epoch-bts</i> on{" "}
                 <Link href="https://hackclub.com/slack" target="_blank">
