@@ -5,7 +5,7 @@ export default function Glossary() {
   return (
     <Box
       sx={{
-        background: "white",
+        background: "#eee",
         color: "black",
         lineHeight: 1.5,
         textAlign: "left",
@@ -260,7 +260,7 @@ function GlossaryItem({ question, answer }) {
   return (
     <Box
       sx={{
-        bg: "white",
+        bg: "#ececec",
         color: "slate",
         py: 2,
         px: 3,
@@ -289,3 +289,4 @@ function GlossaryItem({ question, answer }) {
     </Box>
   );
 }
+
