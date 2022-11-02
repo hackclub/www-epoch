@@ -118,14 +118,14 @@ export default function Glossary() {
               </Box>
               <Box>
                 Epoch is fully open source, funded by, and  run by the Hack Club community. 
-                Hack Clubbers are organising Epoch in public on the 
+                Hack Clubbers are organising Epoch in public on the{" "}
                   <Link href="https://hackclub.com/slack" target="_blank">
                   Hack Club Slack
                 </Link> 
-                and with fully transparent finances using 
+                {" "}and with fully transparent finances using{" "}
                 <Link href="https://bank.hackclub.com/epoch" target="_blank">
                   Hack Club Bank
-                </Link>. 
+                </Link>.
                 Everything from this website to Epoch's dinner menu, was
                 created by teenagers just like yourself and you're welcome to
                 help out in <i>#epoch-bts</i> on{" "}
@@ -173,6 +173,7 @@ export default function Glossary() {
                   <a
                     style={{ color: "black" }}
                     href="https://workshops.hackclub.com"
+                    target="_blank"
                   >
                     Hack Club Workshops
                   </a>{" "}
@@ -210,13 +211,18 @@ export default function Glossary() {
                 <>
                   Anything! Apps, art, sites, and hardware projects are all
                   perfect for a hackathon. Check out what{" "}
-                  <a style={{ color: "black" }} href="https://hackclub.com/">
+                  <a 
+                    style={{ color: "black" }} 
+                    href="https://hackclub.com/"
+                    target="_blank"
+                  >
                     Hack Clubbers
                   </a>{" "}
                   are{" "}
                   <a
                     style={{ color: "black" }}
                     href="https://hackclub.com/ship/"
+                    target="_blank"
                   >
                     making every day
                   </a>
@@ -239,7 +245,15 @@ export default function Glossary() {
               question="I have more questions, how can I reach out?"
               answer={
                 <>
-                  Contact us! Reach out on #epoch on the Hack Club Slack or email us at {" "}
+                  Contact us! Reach out on #epoch on the{" "}
+                  <a 
+                    style={{ color: "black" }}
+                    href="https://hackclub.com/slack"
+                    target="_blank"
+                  >
+                    Hack Club Slack
+                  </a>
+                  {" "}or email us at {" "}
                   <a
                     style={{ color: "black" }}
                     href="mailto:epoch@hackclub.com"
