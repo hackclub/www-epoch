@@ -1,8 +1,8 @@
 // Full credit to https://joshwcomeau.com/react/animated-sparkles-in-react/
-import React, { useState } from 'react'
-import styled from '@emotion/styled'
 import { keyframes } from '@emotion/react'
-import { range, sample, random } from 'lodash'
+import styled from '@emotion/styled'
+import { random, range, sample } from 'lodash'
+import React, { useState } from 'react'
 import { Text } from 'theme-ui'
 import theme from '../lib/theme'
 
@@ -46,12 +46,11 @@ const getInitialState = () => {
 }
 
 function usePrefersReducedMotion() {
-  const [prefersReducedMotion, setPrefersReducedMotion] = React.useState(
-    getInitialState
-  )
+  const [prefersReducedMotion, setPrefersReducedMotion] =
+    React.useState(getInitialState)
   React.useEffect(() => {
     const mediaQueryList = window.matchMedia(QUERY)
-    const listener = event => {
+    const listener = (event) => {
       setPrefersReducedMotion(!event.matches)
     }
     mediaQueryList.addListener(listener)
@@ -62,7 +61,7 @@ function usePrefersReducedMotion() {
   return prefersReducedMotion
 }
 
-const generateSparkle = color => {
+const generateSparkle = (color) => {
   const sparkle = {
     id: String(random(10000, 99999)),
     createdAt: Date.now(),
@@ -70,8 +69,8 @@ const generateSparkle = color => {
     size: random(10, 20),
     style: {
       top: random(0, 100) + '%',
-      left: random(0, 100) + '%'
-    }
+      left: random(0, 100) + '%',
+    },
   }
   return sparkle
 }
@@ -83,7 +82,7 @@ const Sparkles = ({
   props,
   ...delegated
 }) => {
-  const allColors = colors.map(n => theme.colors[n])
+  const allColors = colors.map((n) => theme.colors[n])
   const getColor = () => sample(allColors)
   const [sparkles, setSparkles] = useState(() => {
     return range(3).map(() => generateSparkle(getColor()))
@@ -93,7 +92,7 @@ const Sparkles = ({
     () => {
       const sparkle = generateSparkle(getColor())
       const now = Date.now()
-      const nextSparkles = sparkles.filter(sp => {
+      const nextSparkles = sparkles.filter((sp) => {
         const delta = now - sp.createdAt
         return delta < 750
       })
@@ -106,7 +105,7 @@ const Sparkles = ({
 
   return (
     <Wrapper {...delegated}>
-      {sparkles.map(sparkle => (
+      {sparkles.map((sparkle) => (
         <Sparkle
           key={sparkle.id}
           color={sparkle.color}

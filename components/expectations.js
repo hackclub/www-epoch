@@ -1,4 +1,4 @@
-import { Box, Container, Grid, Image } from "theme-ui";
+import { Box, Container, Grid, Image } from 'theme-ui'
 
 export default function Expectations() {
   return (
@@ -10,11 +10,11 @@ export default function Expectations() {
     >
       <Box
         sx={{
-          width: "800px",
-          margin: "auto",
-          textAlign: "center",
+          width: '800px',
+          margin: 'auto',
+          textAlign: 'center',
           fontWeight: 400,
-          textShadow: "elevated",
+          textShadow: 'elevated',
         }}
       >
         50+ Hack Clubbers have came together to organise this event, you may be
@@ -46,20 +46,20 @@ export default function Expectations() {
         />
       </Grid>
     </Box>
-  );
+  )
 }
 
 function SlackMessage({ username, message, image }) {
   return (
     <Box
       sx={{
-        background: "white",
-        display: "flex",
-        border: "1px solid",
+        background: 'white',
+        display: 'flex',
+        border: '1px solid',
         borderColor: 'black',
         color: 'black',
         borderRadius: 8,
-        overflow: "hidden",
+        overflow: 'hidden',
         p: 3,
         gap: 3,
         fontSize: [1, 2, 2],
@@ -69,18 +69,18 @@ function SlackMessage({ username, message, image }) {
         src={image ? image : `https://github.com/${username}.png`}
         sx={{
           borderRadius: 7,
-          height: "84px",
-          width: "84px",
-          flexShrink: "0",
-          objectFit: "cover",
+          height: '84px',
+          width: '84px',
+          flexShrink: '0',
+          objectFit: 'cover',
         }}
       />
       <Box>
         <b>@{username}</b>
-        <Box mt={1} mb={2} sx={{ lineHeight: "1.3" }}>
+        <Box mt={1} mb={2} sx={{ lineHeight: '1.3' }}>
           {message}
         </Box>
       </Box>
     </Box>
-  );
+  )
 }
