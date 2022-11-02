@@ -153,7 +153,7 @@ export default function Main() {
                   Dec. 30 2022 to Jan. 1 2023
                 </Box>
                 <Box sx={{ fontWeight: 800 }}>CyberCity, Delhi NCR </Box>
-                <Box>₹1.25 Lakh in travel stipends </Box>
+                <Box>₹12.5 Lakh in travel stipends </Box>
                 <Box> Doors open at 6PM; 42-hours long </Box>
               </Flex>
             </Flex>
