@@ -81,6 +81,7 @@ const signatures = [
   'faisalsayed10',
   'arashnrim',
   'Nilaany26',
+  "tregsthedev"
 ]
 
 const Signature = ({ href, src, style }) => (
