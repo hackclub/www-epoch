@@ -1,49 +1,49 @@
-import { Box, Grid, Heading, Image, Link } from "theme-ui";
-import FilmGrain from "../components/filmGrain";
-import { Text, Button } from "theme-ui";
-import { useState } from "react";
-import theme from "../lib/theme";
-import Sparkles from "./sparkles";
+import { Box, Grid, Heading, Image, Link } from 'theme-ui'
+import FilmGrain from '../components/filmGrain'
+import { Text, Button } from 'theme-ui'
+import { useState } from 'react'
+import theme from '../lib/theme'
+import Sparkles from './sparkles'
 
 let hoverable = {
-  cursor: "pointer",
-  transition: "transform .125s ease-in-out, box-shadow .125s ease-in-out",
-  "&:hover": {
-    transform: "scale(1.05)",
+  cursor: 'pointer',
+  transition: 'transform .125s ease-in-out, box-shadow .125s ease-in-out',
+  '&:hover': {
+    transform: 'scale(1.05)',
   },
-};
+}
 
 function Modal(props) {
   return (
     <Box
       sx={{
-        display: props.open == false ? "none" : "flex",
-        position: "fixed",
-        height: "100vh",
-        width: "100vw",
-        alignItems: "center",
-        justifyContent: "center",
-        zIndex: "999",
+        display: props.open == false ? 'none' : 'flex',
+        position: 'fixed',
+        height: '100vh',
+        width: '100vw',
+        alignItems: 'center',
+        justifyContent: 'center',
+        zIndex: '999',
         top: 0,
         background: `rgba(0, 0, 0, 0.7)`,
-        color: 'white'
+        color: 'white',
       }}
       onClick={() => props.setOpen(false)}
     >
       <Box
         sx={{
-          width: "90vw",
-          maxWidth: "800px",
-          bg: "black",
+          width: '90vw',
+          maxWidth: '800px',
+          bg: 'black',
           borderRadius: 6,
-          overflow: "hidden",
+          overflow: 'hidden',
         }}
       >
         <Box
           bg={props.data.colour}
           px={3}
           pb={2}
-          pt={"12px"}
+          pt={'12px'}
           sx={{ fontSize: 3, fontWeight: 700 }}
         >
           {props.data.title}
@@ -51,8 +51,8 @@ function Modal(props) {
         <Box
           p={3}
           sx={{
-            fontSize: "18px",
-            border: "3px solid",
+            fontSize: '18px',
+            border: '3px solid',
             borderColor: props.data.colour,
             borderBottomLeftRadius: 6,
             borderBottomRightRadius: 6,
@@ -62,15 +62,15 @@ function Modal(props) {
         </Box>
       </Box>
     </Box>
-  );
+  )
 }
 
 export default function Forward() {
-  const [open, setOpen] = useState(false);
-  const [index, setIndex] = useState(0);
+  const [open, setOpen] = useState(false)
+  const [index, setIndex] = useState(0)
   let modalData = {
     0: {
-      title: "Organised by the Hack Club community, for you.",
+      title: 'Organised by the Hack Club community, for you.',
       description: (
         <Grid columns="2fr 1fr">
           <Box>
@@ -78,13 +78,13 @@ export default function Forward() {
             artists, writers, engineers, tinkerers, campers, filmmakers,
             volunteers. We make things. We help one another. We have fun.
             <br /> <br />
-            Epoch has been organised by the community in public on the{" "}
+            Epoch has been organised by the community in public on the{' '}
             <Link href="https://hackclub.com/slack" target="_blank">
               Hack Club Slack
             </Link>
             . Everything from this website to Epoch's dinner menu, was created
-            by teenagers just like yourself and you're welcome to help out in{" "}
-            <i>#epoch-bts</i> on{" "}
+            by teenagers just like yourself and you're welcome to help out in{' '}
+            <i>#epoch-bts</i> on{' '}
             <Link href="https://hackclub.com/slack" target="_blank">
               the Slack
             </Link>
@@ -96,13 +96,13 @@ export default function Forward() {
           />
         </Grid>
       ),
-      colour: "red",
+      colour: 'red',
     },
     1: {
-      title: "Cyber City, Delhi NCR",
+      title: 'Cyber City, Delhi NCR',
       description: (
         <Grid columns={2}>
-          <Box sx={{ lineHeight: "1.6" }}>
+          <Box sx={{ lineHeight: '1.6' }}>
             <b>Epoch is taking place at:</b>
             <br />
             Masters' Union School of Business
@@ -114,28 +114,33 @@ export default function Forward() {
             Gurugram, Haryana 122022, India
             <Grid columns={2} mt={3}>
               <Image
-                sx={{ borderRadius: 4, objectFit: "cover", height: "200px" }}
+                sx={{ borderRadius: 4, objectFit: 'cover', height: '200px' }}
                 src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Cyber_City_Skyline.jpeg"
               />
               <Image
-                sx={{ borderRadius: 4, objectFit: "cover", height: "200px" }}
+                sx={{ borderRadius: 4, objectFit: 'cover', height: '200px' }}
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Cyber_City_View.jpg/2560px-Cyber_City_View.jpg"
               />
             </Grid>
           </Box>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14024.938975122483!2d77.0909444!3d28.5025843!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xae4dc02e39c2931f!2sMasters&#39;%20Union%20School%20of%20Business!5e0!3m2!1sen!2ssg!4v1666690637009!5m2!1sen!2ssg"
-            style={{ borderRadius: 4, border: 0, width: "100%", height: "100%" }}
+            style={{
+              borderRadius: 4,
+              border: 0,
+              width: '100%',
+              height: '100%',
+            }}
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </Grid>
       ),
-      colour: "orange",
+      colour: 'orange',
     },
     2: {
-      title: "₹12.5 Lakh in travel stipends",
+      title: '₹12.5 Lakh in travel stipends',
       description: (
         <>
           Epoch is for hackers across India and the world; with that in mind,
@@ -148,9 +153,9 @@ export default function Forward() {
           registration form.
         </>
       ),
-      colour: "purple",
+      colour: 'purple',
     },
-  };
+  }
   return (
     <>
       <Modal open={open} data={modalData[index]} setOpen={setOpen} />
@@ -160,23 +165,23 @@ export default function Forward() {
           sx={{
             gap: 3,
             mt: 4,
-            margin: "auto",
-            fontSize: "1.5em",
+            margin: 'auto',
+            fontSize: '1.5em',
             fontWeight: 600,
-            color: 'white'
+            color: 'white',
           }}
         >
-          <Box sx={{ padding: "16px", background: "green", borderRadius: 4 }}>
+          <Box sx={{ padding: '16px', background: 'green', borderRadius: 4 }}>
             December 30th to January 1st
           </Box>
           <Box
             onClick={() => {
-              setIndex(1);
-              setOpen(true);
+              setIndex(1)
+              setOpen(true)
             }}
             sx={{
-              padding: "16px",
-              background: "orange",
+              padding: '16px',
+              background: 'orange',
               borderRadius: 4,
               ...hoverable,
             }}
@@ -185,12 +190,12 @@ export default function Forward() {
           </Box>
           <Box
             onClick={() => {
-              setIndex(2);
-              setOpen(true);
+              setIndex(2)
+              setOpen(true)
             }}
             sx={{
-              padding: "16px",
-              background: "purple",
+              padding: '16px',
+              background: 'purple',
               borderRadius: 4,
               ...hoverable,
             }}
@@ -199,12 +204,12 @@ export default function Forward() {
           </Box>
           <Box
             onClick={() => {
-              setIndex(0);
-              setOpen(true);
+              setIndex(0)
+              setOpen(true)
             }}
             sx={{
-              padding: "16px",
-              background: "red",
+              padding: '16px',
+              background: 'red',
               borderRadius: 4,
               ...hoverable,
             }}
@@ -214,5 +219,5 @@ export default function Forward() {
         </Grid>
       </Box>
     </>
-  );
+  )
 }

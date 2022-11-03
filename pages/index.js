@@ -1,19 +1,14 @@
-import Meta from "@hackclub/meta";
-import Flag from "../components/flag";
-import Head from "next/head";
-import Layout from "../components/layout";
-import Foreword from "../components/forward";
-import Hackathon from "../components/hackathon";
-import Expectations from "../components/expectations";
-import Register from "../components/register";
-import Glossary from "../components/glossary";
-import Closing from "../components/closing";
-import { Heading, Box, Text, Flex, Grid } from "theme-ui";
-import ScrollHint from "../components/scroll-hint";
+import Meta from '@hackclub/meta'
+import Head from 'next/head'
+import { Box, Flex, Grid, Heading } from 'theme-ui'
+import Closing from '../components/closing'
+import Glossary from '../components/glossary'
+import Hackathon from '../components/hackathon'
+import Layout from '../components/layout'
+import Register from '../components/register'
+import ScrollHint from '../components/scroll-hint'
 
-import theme from "@hackclub/theme";
-import Sparkles from "../components/sparkles";
-import { Nav } from "../components/nav";
+import { Nav } from '../components/nav'
 
 export default function Main() {
   return (
@@ -32,24 +27,30 @@ export default function Main() {
       />
       <Grid
         sx={{
-          height: "100vh",
+          height: '100vh',
           backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.5) 2.96%, rgba(0, 0, 0,0.9) 100%), url(/assemble.jpg)`,
-          backgroundSize: "cover",
-          backgroundPosition: "bottom",
+          backgroundSize: 'cover',
+          backgroundPosition: 'bottom',
         }}
       >
-        <Flex sx={{ height: "100%", flexDirection: 'column' }}>
+        <Flex
+          sx={{
+            height: '100%',
+            flexDirection: 'column',
+            justifyContent: 'flex-end',
+          }}
+        >
           <Grid
             columns={[1, 2]}
             gap={5}
             py={[3, 5]}
             px={[3, 5]}
-            sx={{ width: "100%" }}
+            sx={{ width: '100%' }}
           >
             <Box
               sx={{
-                textAlign: "center",
-                width: ["100%", "min-content"],
+                textAlign: 'center',
+                width: ['100%', 'min-content'],
                 mt: [4, 0],
                 fontFamily: `"IBM Plex Mono"!important`,
                 mb: [-3, 0],
@@ -58,21 +59,21 @@ export default function Main() {
               <Flex>
                 <Box
                   sx={{
-                    height: "18.42px",
-                    width: "23.61px",
-                    borderTop: "1px solid",
-                    borderLeft: "1px solid",
-                    borderColor: "rgba(175, 175, 175, 1)",
+                    height: '18.42px',
+                    width: '23.61px',
+                    borderTop: '1px solid',
+                    borderLeft: '1px solid',
+                    borderColor: 'rgba(175, 175, 175, 1)',
                   }}
                 />
                 <Box sx={{ flexGrow: 1 }} />
                 <Box
                   sx={{
-                    height: "18.42px",
-                    width: "23.61px",
-                    borderTop: "1px solid",
-                    borderRight: "1px solid",
-                    borderColor: "rgba(175, 175, 175, 1)",
+                    height: '18.42px',
+                    width: '23.61px',
+                    borderTop: '1px solid',
+                    borderRight: '1px solid',
+                    borderColor: 'rgba(175, 175, 175, 1)',
                   }}
                 />
               </Flex>
@@ -82,19 +83,19 @@ export default function Main() {
                   mb: 3,
                   px: 4,
                   zIndex: 999,
-                  position: "relative",
+                  position: 'relative',
                 }}
               >
                 HACK CLUB PRESENTS
               </Box>
               <Heading
                 sx={{
-                  fontSize: ["24vw", "12vw"],
-                  lineHeight: "0.8",
+                  fontSize: ['24vw', '12vw'],
+                  lineHeight: '0.8',
                   fontWeight: 800,
                   px: [3, 4],
                   mb: 2,
-                  color: "white",
+                  color: 'white',
                   fontFamily: '"Fira Code"',
                   textShadow: `0px 0px 21.4900016784668px rgba(255, 71, 148, 1),
                           0px 0px 32.9800033569336px rgba(255, 71, 148, 0.9),
@@ -107,47 +108,47 @@ export default function Main() {
               <Flex>
                 <Box
                   sx={{
-                    height: "18.42px",
-                    width: "23.61px",
-                    borderBottom: "1px solid",
-                    borderLeft: "1px solid",
-                    borderColor: "rgba(175, 175, 175, 1)",
+                    height: '18.42px',
+                    width: '23.61px',
+                    borderBottom: '1px solid',
+                    borderLeft: '1px solid',
+                    borderColor: 'rgba(175, 175, 175, 1)',
                   }}
                 />
                 <Box sx={{ flexGrow: 1 }} />
                 <Box
                   sx={{
-                    height: "18.42px",
-                    width: "23.61px",
-                    borderBottom: "1px solid",
-                    borderRight: "1px solid",
-                    borderColor: "rgba(175, 175, 175, 1)",
+                    height: '18.42px',
+                    width: '23.61px',
+                    borderBottom: '1px solid',
+                    borderRight: '1px solid',
+                    borderColor: 'rgba(175, 175, 175, 1)',
                   }}
                 />
               </Flex>
             </Box>
             <Flex
               sx={{
-                alignItems: "center",
-                justifyContent: ["center", `flex-end`],
+                alignItems: 'center',
+                justifyContent: ['center', `flex-end`],
               }}
             >
               <Flex
                 sx={{
-                  flexDirection: "column",
+                  flexDirection: 'column',
                   gap: 3,
-                  fontSize: ["6vw", 3],
-                  textAlign: ["center", "right"],
-                  textTransform: "uppercase",
+                  fontSize: ['6vw', 3],
+                  textAlign: ['center', 'right'],
+                  textTransform: 'uppercase',
                   fontFamily: `"IBM Plex Mono"`,
-                  maxWidth: "75vw",
+                  maxWidth: '75vw',
                 }}
               >
                 <Box
                   sx={{
                     fontWeight: 800,
-                    maxWidth: ["60vw", "100vw"],
-                    margin: ["auto", 0]
+                    maxWidth: ['60vw', '100vw'],
+                    margin: ['auto', 0],
                   }}
                 >
                   Dec. 30 2022 to Jan. 1 2023
@@ -159,10 +160,17 @@ export default function Main() {
             </Flex>
             <ScrollHint mobile />
           </Grid>
-          <Flex sx={{flexGrow: 1, alignItems: 'flex-end', mb: 5}}>
-          <ScrollHint mobile={false} /></Flex>
+          <Flex
+            sx={{
+              flexGrow: 1,
+              alignItems: 'flex-end',
+              mb: 5,
+              maxHeight: '150px',
+            }}
+          >
+            <ScrollHint mobile={false} />
+          </Flex>
         </Flex>
-        
       </Grid>
       <Hackathon />
       <Layout>
@@ -171,5 +179,5 @@ export default function Main() {
         <Closing />
       </Layout>
     </>
-  );
+  )
 }

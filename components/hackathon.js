@@ -1,30 +1,29 @@
-import { Box, Card, Heading, Text, Grid, Flex } from "theme-ui";
-import Icon from "@hackclub/icons";
-import MuxPlayer from "@mux/mux-player-react";
-import Image from "next/image";
-import AssembleTwo from "../public/assemble2.jpeg";
-import AssembleThree from "../public/assemble3.jpeg";
-import AssembleFour from "../public/assemble4.jpeg";
-import theme from "@hackclub/theme";
+import Icon from '@hackclub/icons'
+import MuxPlayer from '@mux/mux-player-react'
+import Image from 'next/image'
+import { Box, Flex, Grid, Heading, Text } from 'theme-ui'
+import AssembleTwo from '../public/assemble2.jpeg'
+import AssembleThree from '../public/assemble3.jpeg'
+import AssembleFour from '../public/assemble4.jpeg'
 
 function hexToRgb(hex) {
-  var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+  var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex)
   return result
     ? {
         r: parseInt(result[1], 16),
         g: parseInt(result[2], 16),
         b: parseInt(result[3], 16),
       }
-    : null;
+    : null
 }
 
 const Tag = ({ content }) => {
   return (
     <Text
       sx={{
-        background: "muted",
-        color: "white",
-        display: "inline-block",
+        background: 'muted',
+        color: 'white',
+        display: 'inline-block',
         py: 1,
         px: 2,
         borderRadius: 4,
@@ -33,19 +32,19 @@ const Tag = ({ content }) => {
     >
       {content}
     </Text>
-  );
-};
+  )
+}
 
 export default function Hackathon() {
   return (
-    <Grid columns={[1,2]}>
+    <Grid columns={[1, 2]}>
       <Box
         sx={{
-          color: "white",
+          color: 'white',
           lineHeight: 1.5,
-          textAlign: "left",
-          margin: "auto",
-          maxWidth: "800px",
+          textAlign: 'left',
+          margin: 'auto',
+          maxWidth: '800px',
           my: 5,
           px: 4,
           py: 3,
@@ -53,50 +52,50 @@ export default function Hackathon() {
       >
         <Heading
           sx={{
-            fontSize: ["13vw", 5, "84px"],
-            mb: [0,"-10px"],
-            WebkitTextStroke: "white",
-            WebkitTextStrokeWidth: "0.7px",
-            WebkitTextFillColor: "transparent",
+            fontSize: ['13vw', 5, '84px'],
+            mb: [0, '-10px'],
+            WebkitTextStroke: 'white',
+            WebkitTextStrokeWidth: '0.7px',
+            WebkitTextFillColor: 'transparent',
           }}
         >
           Hackathon?
         </Heading>
         <Heading
           sx={{
-            fontSize: ["13vw", 5, "84px"],
+            fontSize: ['13vw', 5, '84px'],
             mb: 2,
             textShadow: `0px 0px 40.4900016784668px rgba(255, 71, 148, 1),
                           0px 0px 64.9800033569336px rgba(255, 71, 148, 0.9),
                           0px 0px 210.42999267578125px rgba(255, 71, 148, 0.8),
                           0px 0px 200.8599853515625px rgba(255, 71, 148, 0.7)`,
-                          position: 'relative',
-            zIndex: '500'
+            position: 'relative',
+            zIndex: '500',
           }}
         >
           Hackathon.
         </Heading>
-        <Box sx={{ fontSize: [2, 3, 3], width: "100%", mt: 3 }}>
-          Epoch is a social coding
-          event where teens come together for a weekend to discover the joy of code, build creative projects and
-          share their projects with the world.
-          <Box sx={{ position: "relative", mt: 3 }}>
+        <Box sx={{ fontSize: [2, 3, 3], width: '100%', mt: 3 }}>
+          Epoch is a social coding event where teens come together for a weekend
+          to discover the joy of code, build creative projects and share their
+          projects with the world.
+          <Box sx={{ position: 'relative', mt: 3 }}>
             <Text
               sx={{
-                background: "white",
-                color: "black",
-                display: ["none","flex"],
-                alignItems: "center",
+                background: 'white',
+                color: 'black',
+                display: ['none', 'flex'],
+                alignItems: 'center',
                 py: 1,
                 px: 2,
                 borderRadius: 4,
-                gap: "6px",
+                gap: '6px',
                 // fontSize: ["0.75em", 3, 3],
                 pr: 3,
                 mt: [0.5, 2, 2],
                 ml: [0.5, 2, 2],
-                width: "fit-content",
-                position: "absolute",
+                width: 'fit-content',
+                position: 'absolute',
                 top: 10,
                 left: 10,
                 zIndex: 998,
@@ -113,64 +112,63 @@ export default function Hackathon() {
           </Box>
         </Box>
       </Box>
-      <Flex sx={{ flexDirection: "column", height: ["80vh","100%"] }}>
+      <Flex sx={{ flexDirection: 'column', height: ['80vh', '100%'] }}>
         {[
-          [AssembleTwo, "#FF4794", "175 Hackers"],
-          [AssembleThree, "#D63AF9", "42 Hours"],
+          [AssembleTwo, '#FF4794', '175 Hackers'],
+          [AssembleThree, '#D63AF9', '42 Hours'],
           [
             AssembleFour,
-            "#9d3af9",
-            <Text sx={{ display: "inline-flex", gap: 2, alignItems: "center" }}>
-              <Text
-                sx={{ fontSize: "1.3em", fontFamily: '"Phantom Sans"' }}
-              >
+            '#9d3af9',
+            <Text sx={{ display: 'inline-flex', gap: 2, alignItems: 'center' }}>
+              <Text sx={{ fontSize: '1.3em', fontFamily: '"Phantom Sans"' }}>
                 ∞
-              </Text>{" "}
+              </Text>{' '}
               Creativity
             </Text>,
           ],
-        ].map((x) => (
+        ].map((x, i) => (
           <Box
+            key={i}
             sx={{
-              position: "relative",
-              height: "100%",
+              position: 'relative',
+              height: '100%',
             }}
           >
             <Box
               sx={{
                 zIndex: 990,
-                position: "absolute",
-                width: "100%",
-                height: "100%",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
+                position: 'absolute',
+                width: '100%',
+                height: '100%',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
                 backgroundImage: `linear-gradient(90deg, rgba(${
                   hexToRgb(x[1]).r
                 },${hexToRgb(x[1]).g},${hexToRgb(x[1]).b},0.5) 0%, rgba(${
                   hexToRgb(x[1]).r
                 },${hexToRgb(x[1]).g},${hexToRgb(x[1]).b},0.5) 100%)`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                "&>.external": {
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                '&>.external': {
                   opacity: 0,
-                  transition: "opacity 0.3s",
+                  transition: 'opacity 0.3s',
                 },
-                ":hover": {
-                  "&>.external": {
+                ':hover': {
+                  '&>.external': {
                     opacity: 1,
-                    transition: "opacity 0.2s",
+                    transition: 'opacity 0.2s',
                   },
                 },
               }}
             >
               <Heading
                 sx={{
-                  fontSize: ["12vw","6vw"],
-                  WebkitTextStroke: "white",
-                  WebkitTextStrokeWidth: ["0px", "2px"],
-                  WebkitTextFillColor: ["white","transparent"],
-                  textTransform: "uppercase",
+                  fontSize: ['12vw', '6vw'],
+                  WebkitTextStroke: 'white',
+                  WebkitTextStrokeWidth: ['0px', '2px'],
+                  WebkitTextFillColor: ['white', 'transparent'],
+                  textTransform: 'uppercase',
                 }}
               >
                 {x[2]}
@@ -187,5 +185,5 @@ export default function Hackathon() {
         ))}
       </Flex>
     </Grid>
-  );
+  )
 }
