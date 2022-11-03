@@ -274,7 +274,7 @@ function GlossaryItem({ question, answer }) {
   return (
     <Box
       sx={{
-        bg: "#ececec",
+        bg: "white",
         color: "slate",
         py: 2,
         px: 3,
