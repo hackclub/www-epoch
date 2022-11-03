@@ -93,7 +93,7 @@ export default function Glossary() {
             <Box>
             We'll cover the full cost of a return flight to New Delhi for
               stipend recipients in India and provide a USD 500 stipend to
-              stipend recipients outside of India. Travel stipends can be requested
+              recipients outside of India. Travel stipends can be requested
               on the registration form below.
             </Box>
           </Box>
