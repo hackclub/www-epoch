@@ -10,10 +10,10 @@ const handleClick = async () => {
     duration: 800,
     update: () => {
       document.scrollingElement.scrollTop = scroll.x
-    }
+    },
   })
 }
-const ScrollHint = ({mobile}) => (
+const ScrollHint = ({ mobile }) => (
   <Box
     sx={{
       display: [mobile ? 'block' : 'none', !mobile ? 'block' : 'none'],
@@ -29,7 +29,7 @@ const ScrollHint = ({mobile}) => (
       transition: 'transform .3s',
 
       '&:hover': { transform: 'translateY(4px) rotate(45deg)' },
-      '&:active': { transform: ' translateY(6px) rotate(45deg)' }
+      '&:active': { transform: ' translateY(6px) rotate(45deg)' },
     }}
     onClick={handleClick}
   ></Box>
