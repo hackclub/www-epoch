@@ -55,7 +55,8 @@ export const Nav = () => {
         }}
       >
         <Link
-          href="#letter"
+          href="https://hackclub.com"
+          target="_blank"
           sx={{
             color: 'white',
             textDecoration: 'none',
