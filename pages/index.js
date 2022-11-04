@@ -12,6 +12,7 @@ import ScrollHint from "../components/scroll-hint";
 
 import { Heading, Box, Text, Flex, Grid } from "theme-ui";
 import { Nav } from "../components/nav";
+import theme from "../lib/theme";
 
 export default function Main() {
   return (
@@ -22,11 +23,11 @@ export default function Main() {
       <Nav />
       <Meta
         as={Head}
-        name="Epoch ~ Delhi NCR, 30th December 2022"
+        name="Hack Club"
         title="Epoch ~ Delhi NCR, 30th December 2022"
         description="This coming new year, 150+ teenage hackers will welcome in 2023 together at a high-school hackathon unlike anything Asia has seen before." // page description
-        image="https://cloud-gr64lwarr-hack-club-bot.vercel.app/0meta-assemble__1_.png"
-        color="#C0362C"
+        image="https://cloud-okdr3fmqq-hack-club-bot.vercel.app/1epoch.hackclub.com-meta.png"
+        color={`#FF4794`}
       />
       <Grid
         sx={{
