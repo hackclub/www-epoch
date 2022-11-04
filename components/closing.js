@@ -54,15 +54,19 @@ export default function Closing() {
           Hack Club Bank
         </Link>
         .<br />
-        <Image
-          src="https://cloud-d6s84nk79-hack-club-bot.vercel.app/0flag-standalone-bw_1.png"
-          sx={{
-            width: '100px',
-            mt: 4,
-
-            textAlign: 'center',
-          }}
-        />
+        <Link
+          href="https://hackclub.com/"
+          target="_blank"
+        >
+          <Image
+            src="https://cloud-d6s84nk79-hack-club-bot.vercel.app/0flag-standalone-bw_1.png"
+            sx={{
+              width: '100px',
+              mt: 4,
+              textAlign: 'center',
+            }}
+          />
+        </Link>
       </Box>
     </Container>
   )
