@@ -73,7 +73,7 @@ export default function Register() {
                 opacity: !(name != '' && email != '') ? 0.7 : 1,
                 background: theme.util.gx('orange', 'red'),
               }}
-              href={`https://register.epoch.hackclub.dev?email=${email}&name=${name}`}
+              href={`https://register.epoch.hackclub.com?email=${email}&name=${name}`}
             >
               Finish {11 - (name != '' ? 1 : 0) - (email != '' ? 1 : 0)} more
               fields to register.
