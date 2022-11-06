@@ -8,6 +8,7 @@ export default function Register() {
   return (
     <>
       <Box
+        id="register"
         sx={{
           margin: 'auto',
           width: ['90%', '800px', '800px'],
