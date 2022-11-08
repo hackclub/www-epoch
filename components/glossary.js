@@ -194,7 +194,13 @@ export default function Glossary() {
                   </a>{" "}
                   and we'll make sure to answer all their questions. Epoch will
                   be supervised by background checked staff and overseen by 24/7
-                  security staff.
+                  security staff. <b>Read more in our 
+                  <a
+                    style={{ color: "black" }}
+                    href="https://hack.af/epoch-parents"
+                  >
+                    parent's guide
+                  </a>.</b>
                 </>
               }
             />
