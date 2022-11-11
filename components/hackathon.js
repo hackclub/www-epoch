@@ -2,9 +2,9 @@ import Icon from '@hackclub/icons'
 import MuxPlayer from '@mux/mux-player-react'
 import Image from 'next/image'
 import { Box, Flex, Grid, Heading, Text } from 'theme-ui'
-import AssembleTwo from '../public/assemble2.jpeg'
-import AssembleThree from '../public/assemble3.jpeg'
-import AssembleFour from '../public/assemble4.jpeg'
+import AssembleTwo from '../public/assemble2.jpg'
+import AssembleThree from '../public/assemble3.jpg'
+import AssembleFour from '../public/assemble4.jpg'
 
 function hexToRgb(hex) {
   var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex)
