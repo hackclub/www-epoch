@@ -138,7 +138,7 @@ export default function Main() {
                   fontSize: ["6vw", 3],
                   textAlign: ["center", "right"],
                   textTransform: "uppercase",
-                  fontFamily: `"IBM Plex Mono"`,
+                  fontFamily: `"Fira Code Zero", "IBM Plex Mono"`,
                   maxWidth: "75vw",
                 }}
               >
@@ -161,7 +161,7 @@ export default function Main() {
           <Flex sx={{flexGrow: 1, alignItems: 'flex-end', mb: 5}}>
           <ScrollHint mobile={false} /></Flex>
         </Flex>
-        
+
       </Grid>
       <Hackathon />
       <Layout>
