@@ -44,22 +44,26 @@ export default function Register() {
             <Input
               placeholder="Your Name"
               sx={{
-                color: 'white',
                 border: '1px solid',
                 borderColor: 'slate',
                 textAlign: 'center',
                 color: 'text',
+                '::placeholder': {
+                  color: 'muted',
+                }
               }}
               onChange={(e) => setName(e.target.value)}
             />
             <Input
               placeholder="Your Email"
               sx={{
-                color: 'white',
                 border: '1px solid',
                 borderColor: 'slate',
                 textAlign: 'center',
                 color: 'text',
+                '::placeholder': {
+                  color: 'muted',
+                }
               }}
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -71,8 +75,9 @@ export default function Register() {
                 pointerEvents: !(name != '' && email != '')
                   ? `none`
                   : `default`,
-                opacity: !(name != '' && email != '') ? 0.7 : 1,
-                background: theme.util.gx('orange', 'red'),
+                transition: 'background 0.2s ease-in-out',
+                background: !(name != '' && email != '') ? 'transparent' : theme.util.gx('orange', 'red'),
+                border: !(name != '' && email != '') ? '2px dashed red' : 'none',
               }}
               href={`https://register.epoch.hackclub.com?email=${email}&name=${name}`}
             >
