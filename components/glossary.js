@@ -88,7 +88,7 @@ export default function Glossary() {
               <b>₹12.5 Lakh in Travel Stipends: </b>Epoch is for hackers across
               India and the world; with that in mind, we're providing ₹12.5 lakh
               in travel stipends to both domestic and international attendees.
-              
+
             </Box>
             <Box>
             We'll cover the full cost of a return flight to New Delhi for
@@ -117,11 +117,11 @@ export default function Glossary() {
                 have fun.
               </Box>
               <Box>
-                Epoch is fully open source, funded by, and  run by the Hack Club community. 
+                Epoch is fully open source, funded by, and  run by the Hack Club community.
                 Hack Clubbers are organising Epoch in public on the{" "}
                   <Link href="https://hackclub.com/slack" target="_blank">
                   Hack Club Slack
-                </Link> 
+                </Link>
                 {" "}and with fully transparent finances using{" "}
                 <Link href="https://bank.hackclub.com/epoch" target="_blank">
                   Hack Club Bank
@@ -217,8 +217,8 @@ export default function Glossary() {
                 <>
                   Anything! Apps, art, sites, and hardware projects are all
                   perfect for a hackathon. Check out what{" "}
-                  <a 
-                    style={{ color: "black" }} 
+                  <a
+                    style={{ color: "black" }}
                     href="https://hackclub.com/"
                     target="_blank"
                   >
@@ -246,13 +246,13 @@ export default function Glossary() {
                 </>
               }
             />
-            
+
             <GlossaryItem
               question="I have more questions, how can I reach out?"
               answer={
                 <>
                   Contact us! Reach out on #epoch on the{" "}
-                  <a 
+                  <a
                     style={{ color: "black" }}
                     href="https://hackclub.com/slack"
                     target="_blank"
@@ -287,7 +287,12 @@ function GlossaryItem({ question, answer }) {
         borderRadius: 4,
         border: "0.7px solid",
         borderColor: "slate",
-        fontSize: ["18px",2]
+        fontSize: ["18px",2],
+        cursor: "pointer",
+        transition: "all 0.1s ease-in-out",
+        ':hover': {
+          boxShadow: "0px 0px 10px rgba(255, 71, 148, 0.25)"
+        }
       }}
     >
       <Box as="details">
