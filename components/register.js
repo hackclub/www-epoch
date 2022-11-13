@@ -48,6 +48,10 @@ export default function Register() {
                 borderColor: 'slate',
                 textAlign: 'center',
                 color: 'text',
+                transition: 'border-color 0.05s ease-in-out',
+                ':hover': {
+                  borderColor: 'muted',
+                },
                 '::placeholder': {
                   color: 'muted',
                 }
@@ -61,6 +65,10 @@ export default function Register() {
                 borderColor: 'slate',
                 textAlign: 'center',
                 color: 'text',
+                transition: 'border-color 0.05s ease-in-out',
+                ':hover': {
+                  borderColor: 'muted',
+                },
                 '::placeholder': {
                   color: 'muted',
                 }
@@ -75,9 +83,16 @@ export default function Register() {
                 pointerEvents: !(name != '' && email != '')
                   ? `none`
                   : `default`,
+                cursor: !(name != '' && email != '')
+                  ? 'not-allowed'
+                  : 'pointer',
                 transition: 'background 0.2s ease-in-out',
-                background: !(name != '' && email != '') ? 'transparent' : theme.util.gx('orange', 'red'),
-                border: !(name != '' && email != '') ? '2px dashed red' : 'none',
+                background: !(name != '' && email != '')
+                  ? 'transparent'
+                  : theme.util.gx('orange', 'red'),
+                border: !(name != '' && email != '')
+                  ? '2px dashed red'
+                  : 'none',
               }}
               href={`https://register.epoch.hackclub.com?email=${email}&name=${name}`}
             >
