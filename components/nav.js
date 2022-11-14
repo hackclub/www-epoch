@@ -53,6 +53,7 @@ export const Nav = () => {
           color: 'white',
           textAlign: 'left',
         }}
+        as="div"
       >
         <Link
           href="https://hackclub.com"
@@ -78,7 +79,9 @@ export const Nav = () => {
           color: 'muted',
           textTransform: 'uppercase',
           display: ['none', 'block'],
+          fontSize: 2
         }}
+        as="div"
       >
         Epoch, Dec. 30th to Jan. 1st
       </Heading>
@@ -88,7 +91,7 @@ export const Nav = () => {
         sx={{ color: 'white', textDecoration: 'none' }}
       >
         <Heading
-          as="h3"
+          as="div"
           bg={`#FF4794`}
           sx={{
             borderRadius: '4px',

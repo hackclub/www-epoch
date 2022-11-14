@@ -29,6 +29,9 @@ export default function Main() {
         image="https://cloud-6hdjg5twa-hack-club-bot.vercel.app/0epoch.hackclub.com-meta.png"
         color={`#FF4794`}
       />
+      <h1 style={{display: 'none'}}>
+        Epoch - high school hackathon in the Delhi NCR.
+      </h1>
       <Grid
         sx={{
           height: "100vh",
@@ -87,6 +90,7 @@ export default function Main() {
                 HACK CLUB PRESENTS
               </Box>
               <Heading
+                as="div"
                 sx={{
                   fontSize: ["24vw", "12vw"],
                   lineHeight: "0.8",

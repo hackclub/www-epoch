@@ -51,6 +51,7 @@ export default function Hackathon() {
         }}
       >
         <Heading
+          as="div"
           sx={{
             fontSize: ['13vw', '7.4vw'],
             mb: [0, '-10px'],
@@ -163,6 +164,7 @@ export default function Hackathon() {
               }}
             >
               <Heading
+                as="h3"
                 sx={{
                   fontSize: ['12vw', '6vw'],
                   WebkitTextStroke: 'white',
