@@ -25,7 +25,7 @@ export default function Main() {
         as={Head}
         name="Hack Club"
         title="Epoch - high-school hackathon in the Delhi NCR"
-        description="This coming new year, 150+ teenage hackers will welcome in 2023 together at a high-school hackathon unlike anything the world has seen before." // page description
+        description="In the Delhi NCR, this coming new year, 150+ teenage hackers will welcome in 2023 together at a high-school hackathon unlike anything the world has seen before." // page description
         image="https://cloud-6hdjg5twa-hack-club-bot.vercel.app/0epoch.hackclub.com-meta.png"
         color={`#FF4794`}
       />
