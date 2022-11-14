@@ -182,6 +182,7 @@ export default function Hackathon() {
               layout="fill"
               objectFit="cover"
               className="next-image"
+              alt="Image of a hackathon with Hack Clubbers"
             />
           </Box>
         ))}

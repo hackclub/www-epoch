@@ -65,6 +65,7 @@ export default function Closing() {
               mt: 4,
               textAlign: 'center',
             }}
+            alt="Hack Club Flag"
           />
         </Link>
       </Box>
@@ -90,9 +91,10 @@ const signatures = [
   "ramiz03"
 ]
 
-const Signature = ({ href, src, style }) => (
+const Signature = ({ href, src, style, key }) => (
   <a href={href} target="_blank">
     <img
+      alt={`Signature of ${key}, an organiser of the hackathon.`}
       src={src}
       style={{
         maxWidth: '5em',

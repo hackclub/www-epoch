@@ -69,6 +69,7 @@ export const Nav = () => {
           <Image
             src="https://assets.hackclub.com/flag-standalone.png"
             sx={{ height: '32px', cursor: 'pointer' }}
+            alt="Image of the Hack Club Flag"
           />
         </Link>
       </Heading>

@@ -93,6 +93,7 @@ export default function Forward() {
           <Image
             src="https://cloud-ajzzyogfc-hack-club-bot.vercel.app/0screenshot_2022-10-25_at_5.46.44_pm.png"
             sx={{ borderRadius: 6 }}
+            alt="Hack Clubbers at a high-school hackathon."
           />
         </Grid>
       ),
@@ -114,10 +115,12 @@ export default function Forward() {
             Gurugram, Haryana 122022, India
             <Grid columns={2} mt={3}>
               <Image
+                alt="Image of Gurugram's skyline in the Delhi NCR"
                 sx={{ borderRadius: 4, objectFit: 'cover', height: '200px' }}
                 src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Cyber_City_Skyline.jpeg"
               />
               <Image
+                alt="Image of Gurugram's metro in the Delhi NCR"
                 sx={{ borderRadius: 4, objectFit: 'cover', height: '200px' }}
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Cyber_City_View.jpg/2560px-Cyber_City_View.jpg"
               />
