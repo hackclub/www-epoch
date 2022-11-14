@@ -24,7 +24,7 @@ export default function Main() {
       <Meta
         as={Head}
         name="Hack Club"
-        title="Epoch - Delhi NCR, 30th December 2022"
+        title="Epoch - high-school hackathon in the Delhi NCR"
         description="This coming new year, 150+ teenage hackers will welcome in 2023 together at a high-school hackathon unlike anything the world has seen before." // page description
         image="https://cloud-6hdjg5twa-hack-club-bot.vercel.app/0epoch.hackclub.com-meta.png"
         color={`#FF4794`}
