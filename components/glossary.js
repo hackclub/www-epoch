@@ -91,7 +91,7 @@ export default function Glossary() {
               
             </Box>
             <Box>
-            We'll cover the full cost of a return flight to New Delhi for
+              We'll cover the full cost of a return flight to New Delhi for
               stipend recipients in India and provide a USD 500 stipend to
               recipients outside of India. Travel stipends can be requested
               on the registration form below.
@@ -240,7 +240,8 @@ export default function Glossary() {
               question="What are the sleeping arrangements?"
               answer={
                 <>
-                  On both nights we will have a designated sleeping area in the
+                  On both nights we will have a designated gender-seperated and 
+                  supervised sleeping area in the
                   venue with low lights and minimal sound for you to rest! Make
                   sure to bring a sleeping bag!
                 </>
