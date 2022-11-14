@@ -4,6 +4,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "next-sitemap",
     "start": "next start",
     "fmt": "npx prettier \"{components,pages}/*.js\" --single-quote --no-semi --trailing-comma es5 --write"
   },
@@ -21,6 +22,7 @@
     "framer-motion": "2.3.0",
     "lodash": "^4.17.21",
     "next": "^12.3.1",
+    "next-sitemap": "^3.1.31",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-input-autosize": "^2.2.2",
