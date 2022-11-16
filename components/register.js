@@ -44,22 +44,34 @@ export default function Register() {
             <Input
               placeholder="Your Name"
               sx={{
-                color: 'white',
                 border: '1px solid',
                 borderColor: 'slate',
                 textAlign: 'center',
                 color: 'text',
+                transition: 'border-color 0.05s ease-in-out',
+                ':hover': {
+                  borderColor: 'muted',
+                },
+                '::placeholder': {
+                  color: 'muted',
+                }
               }}
               onChange={(e) => setName(e.target.value)}
             />
             <Input
               placeholder="Your Email"
               sx={{
-                color: 'white',
                 border: '1px solid',
                 borderColor: 'slate',
                 textAlign: 'center',
                 color: 'text',
+                transition: 'border-color 0.05s ease-in-out',
+                ':hover': {
+                  borderColor: 'muted',
+                },
+                '::placeholder': {
+                  color: 'muted',
+                }
               }}
               onChange={(e) => setEmail(e.target.value)}
             />
