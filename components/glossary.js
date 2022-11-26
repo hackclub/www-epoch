@@ -42,7 +42,7 @@ export default function Glossary() {
           >
             <Box>
               <b>Venue:</b> Masters' Union <br />
-              Tower C, DLF Cyberpark, <br />
+              Tower A, DLF Cyberpark, <br />
               Phase II, Udyog Vihar, Sector 20,
               <br />
               Gurugram, Delhi NCR
