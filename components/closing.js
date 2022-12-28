@@ -32,7 +32,7 @@ export default function Closing() {
         <Link href="https://hackclub.com" target="_blank" color="white">
           Hack Club
         </Link>{' '}
-        community, email us at{' '}
+        community; email us at{' '}
         <Link href="mailto:epoch@hackclub.com" target="_blank" color="white">
           epoch@hackclub.com
         </Link>
