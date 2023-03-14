@@ -10,7 +10,7 @@ import Glossary from "../components/glossary";
 import Closing from "../components/closing";
 import ScrollHint from "../components/scroll-hint";
 
-import { Heading, Box, Text, Flex, Grid } from "theme-ui";
+import { Heading, Box, Embed, Text, Flex, Grid } from "theme-ui";
 import { Nav } from "../components/nav";
 import theme from "../lib/theme";
 
@@ -29,12 +29,12 @@ export default function Main() {
         image="https://cloud-6hdjg5twa-hack-club-bot.vercel.app/0epoch.hackclub.com-meta.png"
         color={`#FF4794`}
       />
-      <h1 style={{display: 'none'}}>
+      <h1 style={{ display: 'none' }}>
         Epoch - high school hackathon in the Delhi NCR.
       </h1>
       <Grid
         sx={{
-          height: "100vh",
+          // height: "100vh",
           backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.5) 2.96%, rgba(0, 0, 0,0.9) 100%), url(/assemble.jpg)`,
           backgroundSize: "cover",
           backgroundPosition: "bottom",
@@ -42,11 +42,15 @@ export default function Main() {
       >
         <Flex sx={{ height: "100%", flexDirection: 'column' }}>
           <Grid
-            columns={[1, 2]}
+            columns={
+              [1, 2]
+            }
             gap={5}
             py={[3, 5]}
             px={[3, 5]}
-            sx={{ width: "100%" }}
+            sx={{
+              width: "100%",
+            }}
           >
             <Box
               sx={{
@@ -159,13 +163,28 @@ export default function Main() {
                 <Box>₹12.5 Lakh in travel stipends </Box>
                 <Box> Doors open at 6PM; 42-hours long </Box>
               </Flex>
+
             </Flex>
+            <Box
+              sx={{
+                width: "100%",
+                '@media screen and (min-width: 550px)': {
+                  gridColumn: "span 2",
+                  width: "50%",
+                  margin: "auto"
+                }
+              }}>
+              <Embed
+                sx={{
+                  width: "100%",
+                }}
+                src="https://www.youtube.com/embed/KLx4NZZPzMc" />
+            </Box>
             <ScrollHint mobile />
           </Grid>
-          <Flex sx={{flexGrow: 1, alignItems: 'flex-end', mb: 5}}>
-          <ScrollHint mobile={false} /></Flex>
+          <Flex sx={{ flexGrow: 1, alignItems: 'flex-end', mb: 5 }}>
+            <ScrollHint mobile={false} /></Flex>
         </Flex>
-
       </Grid>
       <Hackathon />
       <Layout>
