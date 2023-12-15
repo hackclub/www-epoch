@@ -1,10 +1,14 @@
 import Meta from "@hackclub/meta";
 import Head from "next/head";
+import Layout from "../components/layout";
+import Hackathon from "../components/hackathon";
+import Register from "../components/register";
+import Glossary from "../components/glossary";
+import Closing from "../components/closing";
 import ScrollHint from "../components/scroll-hint";
 
 import { Heading, Box, Flex, Grid } from "theme-ui";
 import { Nav } from "../components/nav";
-
 export default function Main() {
   return (
     <>
@@ -160,6 +164,12 @@ export default function Main() {
           </Flex>
         </Flex>
       </Grid>
+      <Hackathon />
+      <Layout>
+        <Glossary />
+        <Register />
+        <Closing />
+      </Layout>
     </>
   );
 }
